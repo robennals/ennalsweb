@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amman - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Amman</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>September  2 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/09/14514036-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/09/14514037-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/09/14514039-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/09/14514040-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/09/14514041-photo&#32;1.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/09/14514036-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14514037-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14514039-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14514040-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14514041-photo&#32;1.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Since one cannot fly directly from Iran to Israel, I decided to make a brief stop in Jordan. I was also keen to see Petra.
+</p>
+
+            
+                <p>
+Given it's&nbsp;westernized&nbsp;image, I had expected Jordan to be less religious than Iran, however although the government is less Islamic, the people seen to be more religious than the Iranians. At 4am on my first night I was woken up by a painfully loud amplified shouting that went on for around half an hour. This was the signal for Muslims to wake up and eat before their fast. If there was such a noise in Iran I never heard it. In fact I don't think I ever noticed a dawn call to prayer either and I'm not sure if the Shia even have one.
+</p>
+
+            
+                <p>
+In Iran most of the food stands and a fair few restaurants stayed open during the day during Ramadan, but in Amman everything was closed. My hotel didn't serve breakfast, so I wasn't able to find myself any food or water until I found a small tourist-focussed place by the Roman theatre. I wasn't able to properly check out of my hotel either, since the owner sleeps during the day during Ramadan.
+</p>
+
+            
+                <p>
+While Jordan slows people to not wear headscarves, it seemed thar most women did, and I even saw a woman wearing a burka - something I never saw in Iran. A lot of the men also wore traditional clothing. Somehow requiring women to wear headscarves seems less bad when the men wear headdresses too.
+</p>
+
+            
+                <p>
+Amman was previously the Roman city of Philadelphia and so there are Roman remains everywhere, intermingled with modern buildings and often largely ignored. The centrepiece is a roman theatre, which would be prettier if it wasn't on the middle of a building site - it seems they are making a new visitor centre for it.
+</p>
+
+            
+                <p>
+After a few hours I decided I'd seen everything I wanted to see in Amman and caught a bus to Petra.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Amman&zoom=5&size=300x300&sensor=false&markers=red|Amman'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

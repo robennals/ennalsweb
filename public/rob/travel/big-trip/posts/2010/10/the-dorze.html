@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Dorze - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>The Dorze</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>October  5 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/10/15845589-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/10/15845590-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/10/15845591-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/10/15845592-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/10/15845593-photo&#32;4.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/10/15845589-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/15845590-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/15845591-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/15845592-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/15845593-photo&#32;4.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Ethiopia is a country where some things are very cheap but other things are very expensive. I stayed in one of the nicest hotels in the country for the extortionate cost of $25 a night and most hotels cost more like $5. I dined at a top end restaurant for $7 and could have got a good meal elsewhere for $2. On the other hand, Ethiopia has very little infrastructure, which means that anything imported from elsewhere will be expensive and getting to interesting places often requires flying or renting a 4WD - neither of which are cheap.
+</p>
+
+            
+                <p>
+Asside from the historical circuit up north, the other thing that Ethiopia is most famous for is the tribes of the lower Omo valley. Sadly the only way for a tourist to get to see them is to hire a 4WD + driver and get them to drive you there. On Wednesday I set off from Addis Ababa with Yetnayet, my driver. We had five days to see as much of the lower Omo as we could before I had to catch my plane to South Africa on the 4th. Yetnayet told me that most people took around two or three weeks to do this trip and that the quickest he had seen it done before was eight days. We were going to have to do around 500km each day - most of it off road. I had ideally wanted to save money by joining an existing tour, but no existing groups wanted to do things in quite so much of a rush so I ended up with my own personal driver and 4WD.
+</p>
+
+            
+                <p>
+Our car is a 1989 land cruiser with nearly 300k on the clock and a cracked windscreen held together by "Jesus us the answer" stickers. Fortunately it seems to be in great condition and chews up tough roads like it is driving on asphalt. A land cruiser is definitely the best way to travel. One can go much faster than a bus and in much more comfort. The route was quite treacherous in places and we passed several cars that had failed off cliffs, rolled off slopes, caught fire, or otherwise met sticky ends. I was pleased that I wasn't doing the driving and Yetnayet seemed to know what he was doing.
+</p>
+
+            
+                <p>
+Our first stop was a Dorze village. The Dorze are a highland tribe who are famous for their beehive-shaped huts and their reliance on the enset (false banana) plant. The old ways seem to be fading fast for the Dorze. Although the Dorze had a traditional costume and building style, most people now wear western clothes and live in rectangular huts with corrugated iron roofs, rather than the traditional houses.&nbsp;The village centre had a nice collection of traditional houses, but they seemed to be there largely for the benefit of tourists. Indeed many of the traditional houses had been converted into a tourist hotel.
+</p>
+
+            
+                <p>
+The Dorze are very reliant on the enset and bamboo plants. Their traditional buildings are made out if bamboo and enset is used to make their staple food - a bread also known as enset. I tried some enset bread and found it was rather good and tastes a lot like banana.
+</p>
+
+            
+                <p>
+My tour guide found a traditional warrior costume for me and took some photos of me wearing it. The clothing was made from cheetah skin and the shield was made from hippo skin. I think this may have to become my standard profile photo.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Dorze,+Ethiopia&zoom=5&size=300x300&sensor=false&markers=red|Dorze,+Ethiopia'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

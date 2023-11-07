@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Embed</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script defer="defer" src="http://localhost:5000/loader.js"></script>
+        <script>
+            window.NEWPUBLIC_CONFIG = {
+                embed: true,
+                prototype: 'threadedcomments',
+                instanceKey: 'wars',
+                globalData: {
+                    name: 'Test Conversation'
+                },
+            }
+        </script>        
+    </head>
+    <body>
+        <h1>Test Embed</h1>
+        <p>This is my pretend content</p>
+
+        <div id="root"></div>
+    </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cape Town - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Cape Town</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>October 21 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/10/16436020-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/10/16436021-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/10/16436022-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/10/16436023-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/10/16436024-photo&#32;5.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/10/16436020-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16436021-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16436022-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16436023-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16436024-photo&#32;5.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+People often compare Cape Town to San Francisco. Both are the big city on the west coast, are more relaxed than their eastern neighbour, are on a beautiful peninsular with cold water and beautiful beaches, have famous wine growing regions, beautiful mountains, a famous island prison, and a popular coastal driving route. The architecture also feels quite similar.
+</p>
+
+            
+                <p>
+People in my hostel told me that Cape Town was much safer than Joburg, however checking online a few days later I found that Cape Town is even worse than the dystopian nightmare of Joburg, and according to some estimates, may be even more dangerous than Baghdad.&nbsp;Two of the people in my hostel had been violently mugged in the past week (one had three guns pushed in his face and was frog-marched to an ATM, the other was surrounded by a mob of youths who stripped him of everything except his clothes).
+</p>
+
+            
+                <p>
+Cape town seems more integrated that Joburg. Although most white people still try to avoid going outside and prefer to get around by car, you will see some walking around the safer areas downtown. In the posher areas with armed security, such as the V&amp;A waterfront, you will largely see white people walking around, but also an occasional black face. Similarly, although most restaurants are very much white or very much black, you will see the occasional black face in a white restaurant. Of course, it's possible that this observed difference is just a result of me having seen different parts of the two cities.&nbsp;You still see obvious examples of tensions about the past. A statue of Jan Smuts, a white leader who introduced some of the apartheid laws, is currently wrapped in black plastic bags, and has abusive graffiti written over the title plate.
+</p>
+
+            
+                <p>
+The centerpiece of cape town is table mountain, a 3558ft flat topped mesa mountain that the city wraps itself around. The mountain has the classic mesa shape with a flat top and near-vertical sides. A popular hiking trail runs up to the top and the less energetic can ride to the top on a cableway. My guidebook told me that while the hike usually takes 2-3 hours, it was possible to do it in as little as an hour. I took this as a challenge, started my stopwatch, and set off on a sprint. After a few minutes I realized that I was in danger of passing out and falling off the mountain and so eased back to a more sustainable pace. On reaching the top I checked my stopwatch and discovered that I had just squeaked in under my target, taking 58 minutes. On the other hand I had completely ignored the reportedly spectacular scenery on the way up and not even noticed a beautiful waterfall that other people had photographed.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Cape+Town&zoom=5&size=300x300&sensor=false&markers=red|Cape+Town'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

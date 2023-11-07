@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>An Ethiopian Jewish Village - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>An Ethiopian Jewish Village</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>September 28 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/09/15565834-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/09/15565836-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/09/15565837-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/09/15565838-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/09/15565865-photo&#32;4.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/09/15565834-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15565836-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15565837-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15565838-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15565865-photo&#32;4.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Ethiopia seems a strange place to find a Jewish community, and indeed it is quite a strange Jewish community. The Falashas claim to have been practicing Judaism in Ethiopia since before the Babylonian conquest. Their exact origins are lost in the midsts of time, but my guide told me that the Falashas (as they call themselves) believe they were originally converted to Judaism by King Menilik the first, who was the son of the queen of Sheba and King Solomon.
+</p>
+
+            
+                <p>
+There are very few Falashas left in Ethiopia now. The vast majority chose to move to Israel as part of the controversial airlift program that took place in the 1980s. Indeed I had seen several Ethiopian Jews in Israel during my visit, including several soldiers and a bus driver.
+</p>
+
+            
+                <p>
+I visited a Falasha village a few miles from Gondar. The village seemed much the same as any other Ethiopian village. The people seemed ethnically indistinguishable from other Ethiopians and the buildings and clothing seemed much the same as a Christian village. The most notable difference was that the villagers had painted Star of David logos everywhere and one of the mud huts was designated as a synagogue.
+</p>
+
+            
+                <p>
+It wasn't clear to what extent all the stars of David were a show put on for tourists; being so close to Gondar, the village gets a lot of tourists and the current economic focus of the village seems to be selling tourists clay models of Solomon in bed with the Queen of Sheba.
+</p>
+
+            
+                <p>
+I went inside the synagogue, half expecting to find something resembling the synagogues I had been to before. Instead the mud hut was largely bare, except for some finger painted patterns on the walls.
+</p>
+
+            
+                <p>
+In the evening back in Gondar, I found a bar where a people were dancing to a traditional Ethiopian band. Naturally I joined in. It was interesting how similar traditional Ethiopian dancing is to modern hip-hop dancing - although I wouldn't be surprised if the influences go in both directions. After the entertainment had finished the band let me try playing their drums and were polite enough to tell me I was good.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Gondar,+Ethiopia&zoom=5&size=300x300&sensor=false&markers=red|Gondar,+Ethiopia'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Local Embed</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script defer="defer" src="http://localhost:19006/static/js/bundle.js"></script>
+        <script>
+            window.NEWPUBLIC_CONFIG = {
+                embed: true,
+                prototype: 'threadedcomments',
+                instanceKey: 'test',
+                globalData: {
+                    name: 'Test Conversation'
+                },
+            }
+        </script>        
+    </head>
+    <body>
+        <h1>Local Embed</h1>
+        <p>This is my pretend content</p>
+
+        <div id="root"></div>
+    </body>
+</html>

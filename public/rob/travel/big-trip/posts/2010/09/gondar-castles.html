@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gondar Castles - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Gondar Castles</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>September 28 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/09/15557512-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/09/15557514-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/09/15557515-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/09/15557516-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/09/15557517-photo&#32;4.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/09/15557512-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15557514-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15557515-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15557516-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15557517-photo&#32;4.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Gondar is a former capital of Ethiopia and is famous for its castles. The royal compound contains six castles, built at various points during the 17th century. The castles are remarkable not only for their beauty, but for where they are. My guide told me that they are the only castles in sub-Saharan Africa.
+</p>
+
+            
+                <p>
+The exact origin of the castles is a bit of a political hot potato and I heard different things from different people. It seems that the labor was almost certainly local, but the Portuguese or Indian architects may have been involved in the design of at least some of the castles. As a Christian country, Ethiopia was seen as an allie against the Muslims by Christian Europe and so interacted more with Europe than other African countries. The king who started the construction was so keen to attact help from the Portuguese that he attempted to convert the country to Catholicism, but subsequent kings reacted to this outrage by banning Europeans from Ethiopia for 100 years.
+</p>
+
+            
+                <p>
+The castles have thick walls constructed from small locally collected stones bonded with soft mortar. The design of the walls is similar to some of the local houses, though obviously much higher and thicker. Since the mortar is relatively soft, several sections of castle wall have been damaged by tree roots growing through the walls.&nbsp;
+</p>
+
+            
+                <p>
+The Italians used the Gondar castles as a military base when they occupied Ethiopia. As a result, many of the castles were severely damaged by British bombing during WW2.
+</p>
+
+            
+                <p>
+The ride to Gondar was itself quite interesting. I caught a shared minibus from Bahir Dar. The bus journey itself took only three hours, but before we left, the bus first spent two hours driving around town looking for people to fill up the bus. Along the way, the bus stopped at lots of little villages to pick up villagers who wanted to go north. Many of the women in this area have a cross tattooed across their forehead - Christianity here has a definite African twist to it.
+</p>
+
+            
+                <p>
+Many of the more tourist-focussed restaurants offer "forengi food" - Ethiopian takes on food from other countries. The results aren't always quite what one would expect. In one restaurant I ordered "macaroni cheese" and got back a plate of macaroni, a bowl of grated cheese, and a bowl of tomato sauce. Once stirred together it was delicious. I've also heard that "pizza" often has no cheese.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Gondar,+Ethiopia&zoom=5&size=300x300&sensor=false&markers=red|Gondar,+Ethiopia'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

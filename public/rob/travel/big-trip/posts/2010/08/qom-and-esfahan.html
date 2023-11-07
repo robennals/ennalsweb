@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Qom and Esfahan - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Qom and Esfahan</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>August 22 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/08/14048290-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/08/14048291-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/08/14048292-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/08/14048293-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/08/14048294-photo&#32;5.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/08/14048290-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/14048291-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/14048292-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/14048293-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/14048294-photo&#32;5.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+On Saturday I said goodbye to Tehran and headed to Kashan, via Qom.
+</p>
+
+            
+                <p>
+Qom is one of the most conservative cities in Iran, home of Ayatollah Khomeini, and site of the second holiest shrine in all if Iran. Officially non-Muslims are strictly forbidden from entering the shrine itself, however I had little difficulty sneaking in. A local Iranian befriended me and escorted me in.&nbsp;The inside of the shrine was quite spectacular. It is a shame that one can't take photographs.
+</p>
+
+            
+                <p>
+After seeing the shrine, my guide asked me if I wanted something too eat for lunch. I said that I wasn't really hungry, but he wasn't keen to take no for an answer. Eventually I said I would quite like an ice cream, so he took me to an ice cream shop right outside the main entrance to the shrine. With ice-cream in hand, I headed for a side street where I could eat it out of view, bur my guide was having none of it, saying "Iran is not religious. We are free. You can eat ice cream here.". I thought that even though Iran might be free, there was surely a better place for me to break the Ramadan fast than directly outside the second holiest site in Iran, surrounded by religious pilgrims. However he insisted than Iran has freedom and I should eat my ice cream there. Eventually I gave in and tried to eat my ice cream as furtively as I could, covering what I was doing with my free hand. One I had finished, he said to me "tell your friends in England, Iran is not religious, we are free". I'm not entirely convinced. There is clearly tension in Iran about what the role of religion should be.
+</p>
+
+            
+                <p>
+My next stop was Kashan, a small desert Oasis with a collection of well preserved traditional houses. The weather in Kashan was baking hot - the hotel manager told me it was 46 outside. Fortunately is wasn't humid and so it was possible to function to some extent.
+</p>
+
+            
+                <p>
+Qom and Kashan are clearly much more conservative than Tehran. Women are largely absent from the streets and those that there are out in public all cover themselves with a black chador. It feels like a different country to modem Tehran.
+</p>
+
+            
+                <p>
+I'm now in Esfahan and I'll be writing something about Esfahan soon.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Esfahan&zoom=5&size=300x300&sensor=false&markers=red|Esfahan'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

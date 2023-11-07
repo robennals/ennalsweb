@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tehran - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Tehran</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>August 18 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/08/13879924-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/08/13879925-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/08/13879926-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/08/13879927-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/08/13879928-photo&#32;4.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/08/13879924-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13879925-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13879926-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13879927-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13879928-photo&#32;4.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Iran is in the news so often, is described in such conflicting ways, and had so rich a history that I felt I had to come here.
+</p>
+
+            
+                <p>
+A lot of people have expressed worries about whether Iran is safe. Crime here is probably lower than London or Berkeley and the government only gets in your business if you do something really really stupid. The only real risk is whether this week may be the week when America decides that two wars in the middle east aren't quite enough, in which case things could get icky. I was somewhat concerned to learn, shortly after arriving, that John Bolton was insisting that the US must attack Iran within a week.
+</p>
+
+            
+                <p>
+The hotel I'm staying at is the top pick in lonely planet and so it seems to be completely occupied by western tourists. On leaving my hotel room I ran into a Swiss couple and asked them what they thought of the security situation. They told me that Iran is totally totally safe, but then they let on that they had come to Iran from Afghanistan (it's really interesting apparently), making me less sure I should trust they judgement.
+</p>
+
+            
+                <p>
+I visited the UK embassy and they also told me that Iran is safe and that they will phone me if the situation looks like it might change, but I noted that they were sitting in what is probably the most heavily fortified civilian building I have ever seen.
+</p>
+
+            
+                <p>
+The US embassy is now the "US Den of Espionage". It is covered in anti-US murals and occupied by a revolutionary militia. I would have photographed it, but the UK embassy recommended that I avoid photographing anything outdoors unless it is obviously a tourist site, since it can be hard to predict what the government believes is a sensitive site and taking photos draws attention to myself. I had already taken a couple of street photos, but they will be my last.
+</p>
+
+            
+                <p>
+One of the highlights of Tehran is the Golestan Palace, where the Shah used to live. If you have ever played the computer game "Prince of Persia" then the building will seem strangely familiar, even down to the way the mosaic tiles make the patterns on the walls look pixelated. The interiors of the buildings are quite spectacular. Mirrors, marble, and cut glass are used to create an effect rather like being inside a giant psychedelic diamond. It makes Britain's royal palaces seem very staid.
+</p>
+
+            
+                <p>
+One of the great things about being am obvious westerner in Iran is that everyone wants to talk to me. In Turkey people only wanted to talk to me if they wanted to sell me something (usually a carpet) but in Tehran people seem genuinely interested in talking about Iran, London, the UK, international politics, or, in one case, Roy Orbison.
+</p>
+
+            
+                <p>
+While wandering around the Golestan Palace I was approached by a group of three young women who were keen to talk to me about the UK. I was a little worried about this since I had heard that westerners should not be seen talking to unaccompanied young Muslim women. I asked if there was any danger in us talking and they said "maybe a little. It's okay" and then giggled amongst themselves. As an aside, it's hard to avoid noticing that many Iranian women are strikingly attractive.
+</p>
+
+            
+                <p>
+One of the palace guards was also keen to talk to me. Initially I helped him with his English (he was reading a very difficult poetic article and didn't understand some of the metaphors) but discussion eventually to international politics. He revealed that he was a supporter of president Ahmadinejad. In the west, Ahmadinejad is portrayed as being a dangerous crazy man who is supported only by hard line Muslims, but my new friend told me that the west only say he is crazy because he has oil and stands up to America - like Saddam Hussein and Hugo Chavez. He said he supports Ahmadinejad because he believes that Iran needs to stand up against "the American Regime" to protect themselves from becoming a vassal oil state for America, like they once were in the past. He told me that he likes America and American people, but he, and many others are prepared to fight to the death if "the American Regime" tries to destroy his country and take what rightly belongs to the Iranian people.
+</p>
+
+            
+                <p>
+My day ended with a traditional Ramadan dinner after to call to dinner, together with a Spanish couple. I had gone on a semi-fast, skipping lunch, but still drinking, and having a late breakfast. Several people told me that a lot of Iranians also cheat on the water and indeed I saw several people sneaking in quick drinks when they thought they weren't being watched. The Ramadan dinner was delicious and incredibly filling, easily making up for the missed lunch.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Tehran&zoom=5&size=300x300&sensor=false&markers=red|Tehran'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

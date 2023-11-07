@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chilling with Yuri and his family - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Chilling with Yuri and his family</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>August  9 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/08/13451009-image.png'>
+                    
+                        <img src='../../../image/2010/08/13451010-image.png'>
+                    
+                        <img src='../../../image/2010/08/13451011-image.png'>
+                    
+                        <img src='../../../image/2010/08/13451012-image.png'>
+                    
+                        <img src='../../../image/2010/08/13451013-image.png'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/08/13451009-image.png' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13451010-image.png' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13451011-image.png' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13451012-image.png' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13451013-image.png' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+16 years ago, back in 1994, I took part in an exchange program with a school in Moscow. We hosted Yuri for two weeks and then I stayed with his family in Moscow for two weeks. Yuri and I had stayed in touch ever since, but this weekend was the first time we had met in person since the exchange.
+</p>
+
+            
+                <p>
+Annoyingly, my brother, an investment banker who specialises in Eastern Europe, had spoiled the occasion somewhat by meeting up with him a few weeks earlier. Brothers do have an annoying tendency towards oneupmanship.
+</p>
+
+            
+                <p>
+We met up at Yuri's summer house in Sveti Vlas, on the Bulgarian black sea coast. Russian tradition has that Muscovites should own a "dacha" where they can put their family during the summer months when Moscow weather is unpleasant, and this apartment seemed to fall into that tradition. I was relieved to find that Sveti Blas is rather more highbrow than Sunny Beach, which Yuri likes to call Son-a Bitch. Rather than the clubs, casino hotels, and "English Pubs" of Sunny Beach, Sveti Vlas is instead focussed on families who own their own apartments and stay relatively sober (although a lot of then are Russian).
+</p>
+
+            
+                <p>
+When I last met Yuri he was a schoolboy with an interest in music production. Now he is married with two daughters and is chief director of a popular Russian TV show. His younger daughter, Dunya, is a four year old epicentre of chaos, and his older daughter Vasilisa is a seven year old who is surprisingly mature for her age, except for when her father leaves the room. Yuri's wife Anna and mother in law Ludmila were also there, but it was hard for me to get to know them since neither spoke any English.
+</p>
+
+            
+                <p>
+I spent most of the weekend playing with the girls in the sea and in the pool. For much of the time I was the only person playing with them and I wondered if observers thought they were my kids, which made me think about how I would rather like to have kids myself, especially if they were as fun as Yuri's kids.
+</p>
+
+            
+                <p>
+Often the girls would shout something out in Russian, which could be rather disconcerting since I don't speak a word of Russian and most of the people around me were Russians. They could have been saying anything from "this is fun", to "please save me from this bad man". At one point Dunya was repeatedly shouting something at me and getting distressed that I wasn't responding appropriately. It turned out that she was asking me to throw her really high in the air and she responded very well when I finally did what she wanted. It's amazing how high one can throw a four year old girl.
+</p>
+
+            
+        </div>
+
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

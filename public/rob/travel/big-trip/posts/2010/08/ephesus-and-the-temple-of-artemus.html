@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ephesus and the Temple of Artemus - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Ephesus and the Temple of Artemus</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>August 11 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/08/13582743-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/08/13582744-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/08/13582745-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/08/13582746-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/08/13582747-photo&#32;1.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/08/13582743-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13582744-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13582745-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13582746-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13582747-photo&#32;1.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Ephesus is regarded as the second best preserved ancient city in the world (after pompey). In addition to being an important Greek and later Roman city, it was also an important site for early Christianity. St Paul (from Tarsus, also in Turkey) lived there for several years and tradition has it that the virgin Mary lived there (more on that later).
+</p>
+
+            
+                <p>
+I'm staying at the pleasant nearby town of Sircuk. Sircuk is a much more relaxing place than Istanbul. The town centre is pedestrianised, there is little traffic, and an Ephesian aqueduct goes right through the centre of town. It is also home is a remarkably large population of remarkably cute feral cats. You can see natural selection at work as people dining in outdoor restaurants have to choose which of several cats to give their leftovers to, ensuring that only the cutest survive.
+</p>
+
+            
+                <p>
+The remains of Ephesus are pretty amazing. The reason the city is so well preserved is that erosion from the surrounding hills buried the city under two metres of earth, and the city was abandoned in it's ancient state because the same erosion had silted up the harbour, turning it into a malarial swamp. Only 15% of Ephesus has been uncovered, but this includes the majestic public library (at it's time the third largest in the world), two different theatres, and a set of public toilets.
+</p>
+
+            
+                <p>
+Ephesus was also home to the temple of Artemus, which was once one of the seven wonders if the world and is now just one pillar and a load of rubble. Stones from the temple were used to build the Hagia Sophia and another nearby mosque. The best bits of what was left went to the British museum. Like seemingly every ancient ruin, the remaining pillar has a stalk's nest at the top.
+</p>
+
+            
+                <p>
+Artemus was a Greek goddess who was considered equivalent to the Roman goddess Diana. Early Roman Christians also considered the virgin Mary to be a form if Diana, and so it seems an interesting coincidence that the house of the virgin Mary (supposedly also where she died) is just around the corner. The traditional statue form of Diana has her front covered with the testicles of the bulls slain in her honour. That part doesn't seem to have carried over to the virgin Mary.
+</p>
+
+            
+                <p>
+I'm starting to get used to the various calls to prayer, and actually find the calls useful. They correspond roughly to "time to wake up", "time for lunch", "time to finish work", "dinner time", and "time for bed". Things are confused by the fact that my local minaret is right next to the station and the person who does the call to prayer sounds exactly the same as the person who does the station announcements.
+</p>
+
+            
+                <p>
+The requirement to pray five times a day seems less arduous than I had imagined. The typical Muslim prayer seems more similar to a brief yoga routine than the kind of prayer Christians do. The person praying goes through a series of physical positions while reciting a series of important phrases.
+</p>
+
+            
+                <p>
+That said, I'm currently in Aegean Turkey, a place where the population is nominally Muslim but most people practice only very loosely. It's Ramadan now, but the only way you can tell is because of the special promotions at McDonalds (so much for fasting).
+</p>
+
+            
+                <p>
+On a completely unrelated note. I had a much overdue hair cut yesterday and the barber set fire to my nasal hair and ear hair. Apparently this is normal in Turkey.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Phesus&zoom=5&size=300x300&sensor=false&markers=red|Phesus'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

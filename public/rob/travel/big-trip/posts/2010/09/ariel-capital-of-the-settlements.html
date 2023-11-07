@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ariel - capital of the settlements - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Ariel - capital of the settlements</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>September  8 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/09/14785447-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/09/14785448-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/09/14785449-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/09/14785450-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/09/14785451-photo&#32;2.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/09/14785447-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14785448-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14785449-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14785450-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14785451-photo&#32;2.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Ariel is one of the largest settlements in the occupied West Bank. My friend Shelly had suggested that I visit it to get a more balanced view of what settlements are about after visiting Hebron earlier.
+</p>
+
+            
+                <p>
+Ariel likes to refer to itself as the capital of the settlements. It acts as a regional hub providing services such as shops and entertainment to surrounding settlements. Ariel is currently in the news because the left-wing newspaper Ha'Aretz is organising an artists boycott of the new performing arts center that will soon be opening in Ariel. Indeed CNN were filming a report on Ariel while I was there.
+</p>
+
+            
+                <p>
+The bus ride to Ariel was an experience in itself. The journey goes through Palestinian areas and so has to be made in an&nbsp;armored&nbsp;bus. The bus had reinforced glass and the glass was darkened so that snipers would find it harder to pick out targets. Many of the windows had visible damage from previous attacks.&nbsp;The bus stopped at many settlements along the way to Ariel, and I was able to get a feel for what a settlement looks like. All settlements were at the tops of hills and had security gates controlling access.
+</p>
+
+            
+                <p>
+Ariel itself was surprising in it's normality. Apart from the location, it felt like a normal western suburban town, complete with playgrounds, schools, shops, cafes, and the new performing arts centre. I had arranged to meet with a representative from "Friends of Ariel", who managed to slot me in right after CNN (I felt very important). They showed me around the town, and told me about why Ariel was important to Israel. What follows is based on a mix of what they told me, what other people in Ariel told me, and what other Israelis told me - all corrupted by my imperfect memory and misguided inferences. I've ordered by topic rather than by source.
+</p>
+
+            
+                <p>
+"Ariel, and the other settlements in the area, exist almost entirely for military strategic reasons. In the 1967 war Israel learned that it needed to control the high ground in the west bank if it was to be able to resist an Arab invasion from the east. While the population of Ariel are civilians, all adult Israeli settlers have performed military service and so a settlement can quickly turn into a strategically important military position when war breaks out.
+</p>
+
+            
+                <p>
+"The settlers believe that the settlements are essential to the survival of Israel. The Gaza withdrawal showed that it is hard to maintain peace in a territory if you don't have people on the ground inside. The rockets being fired from gaza have little effect because there are no major population centres in range. If the same rockets were being fired from the border of the west bank then they would hit 60% of the Israeli population.
+</p>
+
+            
+                <p>
+"The settlers in Ariel are not there for religious reasons (contrary to the common media meme about settlers). 80% of Ariel's population are secular. While other settlements may have populations that are more religious, it remains true that, for the vast majority of settlements, they are there because they need to be there in order to protect Israel, not because the settlers believe God told them the land was theirs. Settlement law goes to great lengths to make sure settlers are not taking land from Palestinians. A settlement is not allowed to use land if there is any "indication" that Palestinians are using that land. An indication can be something as tenuous as an olive tree that looks as if it /might/ be being cultivated by someone. The aim is, as much as possible, to maintain peace in Palestinian lands without taking land from them.
+</p>
+
+            
+                <p>
+"While the settlements have in some cases been forced to restrict movements of Palestinians in order to provide safety for themselves, this is only done when there is an actual risk - no attacks, no controls. Ariel suffers some kind of attempted attack around once a week, including sniper fire from the Arab town on the nearby hills.
+</p>
+
+            
+                <p>
+"The settlers do not consider what they are doing to be a land grab. As one person said 'We don't want to harm anybody. We don't want more land than we have. We just want to be allowed to live'."&nbsp;
+</p>
+
+            
+                <p>
+<br />
+It is interesting that the media is so keen to argue that settlements must be given up and yet never talks about why the settlers believe they are there.&nbsp;
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Ariel,+Israel&zoom=5&size=300x300&sensor=false&markers=red|Ariel,+Israel'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

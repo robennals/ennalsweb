@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Driving the Cape - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Driving the Cape</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>October 21 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/10/16436842-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/10/16436843-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/10/16436845-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/10/16436846-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/10/16436847-photo&#32;2.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/10/16436842-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16436843-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16436845-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16436846-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16436847-photo&#32;2.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Where San Francisco has the route one costal highway, Cape Town has the Garden Route, which winds across mountains and beautiful coastline though several cute little rural towns and tourist attractions.
+</p>
+
+            
+                <p>
+I rented a Nissan Micra and drove a little over a thousand miles around the Cape area, over the course of four days. I was surprised at how much I liked the Micra. While it didn't have a huge amount of power, it had enough, and it was light and pleasant to drive. It was certainly a welcome step up from the KIA that I had rented in Joburg.
+</p>
+
+            
+                <p>
+Like Portland, South Africa has the strange rule that fuel can only be pumped info your car by a station attendant. Like in Portland, the result is that, in the interests of making a bigger sale, they almost always overfill the tank and pour gas down the side of your car. Every pump has a big pool of spilled fuel next to it. Someone at my hostel told me that that the rule was part of a program to reduce unemployment by giving unskilled people unnecessary tasks. The same motivation is apparently behind the people in the toilets who insist on turning taps on for you (I am skilled in tap operation and do not need assistance) and the people who want to help you park in public car parks even when no other cars are close to you.
+</p>
+
+            
+                <p>
+Shortly after driving out of Cape Town I saw what I looked like human remains scattered across the road, but something seemed wrong. There was what seemed to be a human hand, but there was also a lot of hair, and no clothes, and people seemed to think nothing of driving over it. I soon realised that this was baboon roadkill. Baboons may be smart, but their road-sense is about as good as sheep.
+</p>
+
+            
+                <p>
+The coastal towns feel very different from the big cities. The towns themselves are still very white. One will see the occasional black working as a waiter or gas pumper, but otherwise everyone is white. Most white towns will have a black township nearby, but it will typically be hidden out of the way so you are unlikely to run into a township by accident. The main roads connect the white towns together and other roads connect black townships to white towns, but you are unlikely to come across any black areas en-route between white areas unless you make a deliberate diversion or get lost. This is probably for the best as many townships are very dangerous places for a white person to be.
+</p>
+
+            
+                <p>
+After the excitement of playing with lion cubs and a cheetah, I was keen to get my full set of big cats and find somewhere that would let me play with a tiger or a leopard. A place called Cango Wildlife Park had posters showing people playing with tiger cubs, but when I showed up they told me all their tigers were now too big to safely play with. Nowhere seemed to have leopards. MonkeyLand had a poster with a big logo saying "touch a monkey", which I interpreted to mean that I could play with monkeys (the only animals that can rival big cats for cuteness). I turned up and did a tour, but it turned out that the logo was for "touch a monkey's heart" -an animal welfare charity. We were allowed to walk through the monkey enclosure and photograph them, but not to play with them.
+</p>
+
+            
+                <p>
+One of the big farming industries in the area is ostrich farming. Ostriches were originally farmed for their feathers, but now are primarily farmed for their meat. I did a tour of a farm and got to pet some ostriches. They are sweet creatures with beautiful long eyelashes and a habit of running around for no apparent reason. They are also pretty stupid, with brains smaller than their eyes.
+</p>
+
+            
+                <p>
+I rounded off my garden route tour with a visit to Cape Point and the Cape of Good Hope. This is the most south-westerly point in Africa and is said to be where the Atlantic ocean meets the Indian ocean. More importantly it is very pretty and has penguins.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Cape+Town&zoom=5&size=300x300&sensor=false&markers=red|Cape+Town'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jerusalem - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Jerusalem</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>September  3 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/09/14559806-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/09/14559807-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/09/14559808-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/09/14559809-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/09/14559810-photo&#32;2.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/09/14559806-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14559807-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14559808-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14559809-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14559810-photo&#32;2.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+The old city of Jerusalem has to be one of the weirdest places in the world. Wandering the streets, it feels like I'm attending a convention for the religiously insane. The world contains many strange religious sects with their own esoteric costumes and confusing practices. Pretty much all of them congregate on Jerusalem.
+</p>
+
+            
+                <p>
+Every few minutes one will see a new group of people dressed identically in a different strange costume. Maybe a group of women in burkas, or coptic egyptian monks, or a particularly strangely dressed sect of orthodox Jew, or people with various different kinds of interesting hats. It feels like I need the religious equivalent of a birdspotting guide.
+</p>
+
+            
+                <p>
+I can image it might be quite mentally challenging being a religious fruitcake in Jerusalem. If you in your home city then you are presumably surrounded by similar people and so your clothes and beliefs seem normal, but in Jerusalem surely it's obvious that all those "other" people are a bit bonkers, and isn't it very tempting to conclude that maybe you are too? Apparently the local metal hospital has an entire ward for people who think they are Jesus - they reportedly get very cross with each other.
+</p>
+
+            
+                <p>
+Jerusalem is of course the most holy city for the Jews and the former site of two great temple. The site of the temple is now home to a mosque - the done of the rock. The mosque contains the original sacrificial alter of the Jewish temple and the holy of holies, but non-Muslims are strictly strictly forbidden from entering - our guide said there was a good chance they would be killed.
+</p>
+
+            
+                <p>
+The theological basis for Jerusalem being a Muslim holy site is somewhat dubious.&nbsp;The official Muslim reason is a passage in Quran that says Mohammed travelled to "the furthest mosque" to ascend to heaven and talk to God, but the site of the former Jewish temple was not a mosque and there is no record of that passage being linked to Jerusalem until hundred of years after the Quran was written. Moreover, Islamic rulers had a tradition of converting all symbols of other religions into mosques, to make sure people wouldn't try following other faiths (the same happened to some Christian churches).
+</p>
+
+            
+                <p>
+Jerusalem is divided into four quarters: the Muslim quarter, the Jewish quarter, the Christian quarter, and the Armenian quarter. The Muslim quarter is by far the biggest and the Jewish quarter the smallest. The Armenian quarter is a leftover from the crusades. After the crusaders conquered Jerusalem they realized that they hadn't brought any women with them and the party was getting really boring really fast. The solution was to bring in brides from the nearest Christian country: Armenia.
+</p>
+
+            
+                <p>
+The different quarters are very different. The Jewish quarter is all new buildings because the Muslims raised it to the ground after the war of independence. The Muslim quarter is heaving with an insane number of people living in close proximity. It is noisy, dirty, and feels like a market in an Arab country. The Armenian quarter is surrounded by a second internal wall that they used to protect themselves against the Muslims. The Christian quarter has a ludicrous number of churches from different sects that all compete to see who can wake up the largest number of people.
+</p>
+
+            
+                <p>
+The religious situation is completely insane. The Jews lived here for around a thousand years, but after the Arab conquest the Arabs lived here for a similar time and built much of the current city. The Muslim religious claim to Jerusalem is completely spurious, but that criticism could be levelled at pretty much all religious beliefs. The fact that they have believed it for hundreds of years gives it some value.
+</p>
+
+            
+                <p>
+Strategically speaking, one could not have a secure Jewish state in which Jerusalem is controlled by a hostile Arab country. However, religiously speaking there is no way the Arabs are going to accept peace while their shrine is controlled by Israel (of course some Arabs will never accept peace with a Jewish state having any territory at all).
+</p>
+
+            
+                <p>
+Having walked around the city and seen the variety of religious nuttiness that is focussed on it from so many different sources, I wonder if the best long term solution for the old city might be an independent city-state, along the lines of the Vatican, with strict rules in it's constitution allowing access and preventing militarisation.
+</p>
+
+            
+                <p>
+Yesterday evening a friend and I went to Shabbat dinner with a group of Orthodox Jews we met at the wailing wall, led by a local rabbi. I have been to Shabbat dinners before, but this or was much much more religious and much more orthodox. The religion of some of these people seemed in some ways more similar to the Islam they were so opposed to than the mainstream semi-secular judaism one normally encounters in the UK and the US.
+</p>
+
+            
+                <p>
+Incidentally we are currently having to deal with Rosh HaShanna (Jewish New Year) and Eid (end of Ramadan) occurring simultaneously. It's completely bonkers.
+</p>
+
+            
+                <p>
+-Rob
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Jerusalem&zoom=5&size=300x300&sensor=false&markers=red|Jerusalem'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

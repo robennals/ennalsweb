@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aksum - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Aksum</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>September 28 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/09/15579629-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/09/15579630-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/09/15579631-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/09/15579632-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/09/15579633-photo&#32;3.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/09/15579629-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15579630-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15579631-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15579632-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15579633-photo&#32;3.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Aksum is an ancient city, probably founded some time around 400BC. Back then, the land that is now Ethiopia was ruled by the Sabaens, a&nbsp;semitic&nbsp;people who had crossed the red sea from Yemen. Like their relatives in the middle east, the Sabaens were experts at rock carving and left lots of interesting monuments behind them.&nbsp;Ethiopia's current Amharic language is derived from the Ge'ez, which is itself derived from the ancient Sabaen language.&nbsp;In Aksum, the main things the Sabaens left behind were a set of beautifully carved obelisks and a set of equally well crafted tombs beneath them.
+</p>
+
+            
+                <p>
+Some time in the 4th century, the Aksumites converted to Christianity. Many of the monuments thus have crosses on them. Exactly how the ancient Sabaens morphed into the modern Ethiopians and which group of people built which of the ancient sites in Ethiopia is a rather controversial topic with strong opinions held by different people. For example were the famous rock hewn churches of Lalibela carved by the Sabaens, or by black Ethiopians, or black Ethiopians influenced by their Sabaen forebears, or a mixed community of both, or people ethnically derived from both? Things aren't helped by the fact that there is little written record for this period.&nbsp;Aksum is very much an active archaeological site. Experts estimate that only 5% has been uncovered so far and the locals are keen to uncover more so that they can encourage tourism.
+</p>
+
+            
+                <p>
+In addition to touring the ancient sites, I also toured the more modern churches of Aksum. As always, it was necessary to pay a priest to open the church and to recruit a guide. The priest in this case seemed somewhat zonked and had leaves hanging out of his mouth - the telltale signs that someone is chewing "chat" the legal narcotic of preference for many Ethiopians. Fortunately all he needed to do was open a door, so things went smoothly.
+</p>
+
+            
+                <p>
+If one looks closely at what people in Aksum are wearing one will often see a few surprises. Many people are wearing what are obviously corporate t-shirts from other countries, for example "Wall Mart Employees Annual Picnic 2003" or something about an obscure church in the American Midwest. A visit to a clothing store confirmed my suspicions: many of the shops are selling used clothes from other countries.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Aksum,+Ethiopia&zoom=5&size=300x300&sensor=false&markers=red|Aksum,+Ethiopia'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

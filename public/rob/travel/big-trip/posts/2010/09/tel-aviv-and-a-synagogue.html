@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tel Aviv and a synagogue - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Tel Aviv and a synagogue</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>September  9 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/09/14846722-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/09/14846723-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/09/14846724-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/09/14846725-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/09/14846726-photo&#32;4.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/09/14846722-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14846723-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14846724-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14846725-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14846726-photo&#32;4.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Tel Aviv is a great city set along the Mediterranean coast. The beaches have soft sand, warm water, waves you can bodyboard on, and bars and restaurants sitting on the sand itself.&nbsp;Tel Aviv is much more secular than Jerusalem. I haven't seen any black hats or payos and even yarmulkes are rarely worn. If it suits you you can eat a bacon cheeseburger on shabbat. Good restaurants will serve you whatever cuisine you are after, and interesting shops sell whatever you might want.
+</p>
+
+            
+                <p>
+More generally, I've decided that I really like Israel. It has Europe's sense of beauty, community, and quality of life, but without Europe's stifling conformism. It has America's ambition and creativity, but without its anger or self importance. Israel has world class universities than can hold their own against the best in the US and UK (unlike Europe) and a set of innovative high tech companies at the top of their fields (also unlike Europe). Israel is a country where, threat of imminent annihilation by the surrounding countries aside, I can imagine I would want to live. That puts it in a group that previously only contained the UK and US.
+</p>
+
+            
+                <p>
+When the Europeans drove the Jews out of Europe they didn't expect them to survive (few thought israel would win the 1948 war of independence), but in 60 years, under near constant attack, they have built a country that is in many ways better than Europe. It's easy to see why Europe would be pissed off - Israel has totally showed them up.
+</p>
+
+            
+                <p>
+Yesterday was the first day of Rosh HaShanah and so I decided it would be interesting to go to a synagogue. I had initially been worried that people might think it strange for a non-Jew to attend the service, but my worries were misplaced. As soon as I came through the door I was welcomed, given a yarmulke, and introduced to people.
+</p>
+
+            
+                <p>
+The synagogue was orthodox. The orthodox should not be confused with the ultra-orthodox (black hats, strange hairstyles) who are very different. Just because one is at an orthodox synagogue does not necessarily mean than one is particularly observant about things like kosher; it just means that the service works in the traditional way. On a high holiday like Rosh HaShanah it is not unusual to find semi-secular Jews or even non-Jews like me, in an orthodox synagogue. As one attendee told me, "in Judaism we believe that people should think for themselves. How you practice Judaism is between you and God.".
+</p>
+
+            
+                <p>
+The "think for yourself" part applies to the service as well. In a Christian church people arrive when they are told, leave when they are told, and spend the service doing what they are told. In this synagogue you arrive when you like, leave when you like, and spend the service doing what you like. In the middle a cantor reads a section from the Torah. If you are interested then you can sit nearby and follow along in your book. Otherwise you can go and talk to one of the groups of people, play with the children, or talk to the rabbi.
+</p>
+
+            
+                <p>
+There was also less of the forced reverence than churches often have. There was no fancy decoration inside the building, it is ok to smirk at each other when then cantor has trouble blowing the ram's horn, and telling religious jokes in a loud voice is fine. Children were running round the rabbi's legs while he gave his brief sermon, and nobody thought it necessary to tell them to behave. At one point during the service someone decided to take me to the front, open the holy arc and show me the torah scrolls; that was ok too.
+</p>
+
+            
+                <p>
+If this synagogue is a typical example then it is easy to see why Judaism has been so much better than Christianity at producing original thinkers.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Tel+Aviv&zoom=5&size=300x300&sensor=false&markers=red|Tel+Aviv'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

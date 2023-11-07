@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Egypt: Cairo and Luxor - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Egypt: Cairo and Luxor</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>September 17 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/09/15119281-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/09/15119282-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/09/15119283-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/09/15119284-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/09/15119285-photo&#32;5.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/09/15119281-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15119282-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15119283-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15119284-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15119285-photo&#32;5.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+I can't say I wasn't warned about Egypt. Travellers love to share stories about the different places they gave been to and one consistent theme was that nobody much likes the Egyptians one comes across as a tourist. One traveller summed them up by saying "most people don't speak English, if they do speak English then they don't know anything, if they act like they know something then they are lying and trying to scam you". An Australian tourist even tried to persuade me to visit Egypt on a guided tour so I wouldn't have to interact with the local population. I would like to say my experience was different, but it wasn't.
+</p>
+
+            
+                <p>
+Here is a short subset of the scams I've dealt with do far:
+</p>
+
+            
+                <p>
+Of course not all Egyptians want to scam you. Some of them want to kill you. Egypt has had a lot of trouble with Islamic terrorists targeting tourists in recent years - most notably the massacres in Luxor and Sinai. As a result you will see armed guards and military checkpoints everywhere and the government tries go stop tourists going outside the approved tourist areas. If you want to travel by road then you have to travel in an armed convoy.
+</p>
+
+            
+                <p>
+I'm sure there are people in Egypt who don't want to scam you or kill you, but as a westerner constrained to the tourist areas, you are unlikely to ever meet them.
+</p>
+
+            
+                <p>
+Egypt does of course have some of the greatest archaeological sites in the world, however most of them are let down by poor presentation. The Egyptian museum has an amazing collection, but it feels like an unkempt warehouse, with pieces strewn around seemingly at random. Some pieces haven't even been unpacked from their wooden crates and there is almost no information available about what anything is. The only way to get information about the various Egyptian sites is to hire a guide, but there seems to be little in the way of certification for guides and so most guides will tell you an eclectic mix of factual information and bullshit that they made up (the tour guide scene from slumbdog millionaire seems about right). One guide told me that the reason the left leg is always forwards rather than the right is because if it was the other way round then it would fall over. Another guide thought the pyramids were made using magic.
+</p>
+
+            
+                <p>
+It's likely that a lot of the reason the Egyptians are so annoying is just that they get too many tourists and so the culture has evolved to exploit them. I remember in the Occupied West Bank, the Palestinians in Bethlehem were horrendous, while the less-visited people in Jenin were far more personable. They were murderous hate-filled religious nutcases, but they were at least quite personable nutcases. Similarly everyone raves about how nice the Syrians are and the Iranians (who hardly ever see tourists) are legendary for their niceness.
+</p>
+
+            
+                <p>
+Like any good tourist, my first stop was the Pyramids and the Sphinx. Like Las Vegas, it is worth going to see them to confirm that it really does exist, but once you have been there for about an hour and taken the standard photos it becomes clear than there isn't a great deal to do there.
+</p>
+
+            
+                <p>
+Going inside the pyramids was an interesting experience, but not for the normal reasons. My hotel had told me that there was definitely somewhere I could leave my bag at the pyramids and so I brought my huge backpack with me. Naturally there was no bag check, so I had to lug my bag with me as I went inside the pyramids. Each pyramid contains a steep, low, narrow passage leading to a tomb chamber. Normally one has to bend over to go along this passage. With my backpack on I had to navigate it commando style on my elbows and knees.
+</p>
+
+            
+                <p>
+Interestingly, despite the great desire of Egyptians to get money out of tourists, nobody seems to have paid much attention to what tourists might want to pay for. At Giza, the touts had worked out that people might want camels or cheap plastic tat, or chinese-made papyrus, but nobody had realised that tourists might also want food. There was also no food near the Egyptian museum or the train station. Similarly at Giza there were no drinks sellers anywhere, except at one place, where about ten sat on the ground next to each other.
+</p>
+
+            
+                <p>
+If you do find somewhere that sells something you want it is almost certain they won't have change. This problem is amplified by the fact that ATMs like to dispense 200pound notes and very few shops will accept these. I ended up going to McDonalds four times just because it is one of the few places that can reliably break a big note.
+</p>
+
+            
+                <p>
+As seems to be typical of places that are totally dysfunctional, Egypt is very religious. Women are rarely seen and often wear the full burka. Many of the men have a prominent bruise on their foreheads than is the result of a style of prayer on which they violently head-but the ground, seeking to inflict pain on themselves as part of the prayer process.
+</p>
+
+            
+                <p>
+The ancient Egyptian stuff is pretty cool, but it gets boring surprisingly quickly. One soon realises that there are only four kinds of statue: man standing with left foot in front of right, man standing with legs together and arms crossed, man sitting, and sphinx. There is no fifth statue. The statues are all very well crafted, but they are so similar that it often feels like they have come off the production line of Rameses and Co's Egyptian statue factory. Similarly all temples and tombs seem to have the same layout, and even the hieroglyphics seem to usually say the same things (about the story of the afterlife).
+</p>
+
+            
+                <p>
+Like the ancient Persians, it is notable that all of the great works of the ancient Egyptians seem to have been focussed entirely on the pharaoh. There are tombs to help the pharaoh do well in his afterlife and temples that were only used by high priests (presumably to help the pharaoh in his afterlife). It is easy to agree with the Roman civil engineer Sextus Julius Frontinus when he said "I ask you! Just compare with the vast monuments of this vital aqueduct network those useless Pyramids".
+</p>
+
+            
+                <p>
+Israel critics will be surprised to learn to that Egypt is noticeably poorer than the occupied west bank. The UN gives Egypt an HDI score of 0.703 vs 0.737 for the West Bank (the 0.729 figure I gave in a facebook comment is out of date). If Israel does oppress its Arabs then it does so less than the Egyptian government does.
+</p>
+
+            
+                <p>
+It isn't hard to find poverty in Egypt. While the areas directly around the tourist areas are usually quite nice, walking a couple of hundred metres in an arbitrary direction will usually bring you to somewhere pretty grotty. I've still got a day and a half left here, but Egypt is definitely my least favourite place so far. If the people were pleasant or the historical stuff was well presented then it could be a really great place to visit, but they aren't, it isn't, and it isn't.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Cairo&zoom=5&size=300x300&sensor=false&markers=red|Cairo'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

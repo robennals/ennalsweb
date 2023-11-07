@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mozambique : Maputo - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Mozambique : Maputo</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>October 13 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/10/16153773-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/10/16153774-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/10/16153775-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/10/16153776-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/10/16153777-photo&#32;2.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/10/16153773-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16153774-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16153775-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16153776-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16153777-photo&#32;2.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+The first thing one notices about Mozambique is how dirty it is. There is rubbish strewn everywhere, the pavement is carpeted with broken glass, and one doesn't have to look long to find the odd used condom wrapper. Ethiopia was very poor, but still managed to be immaculately clean. South Africa and Borswana have near-western levels of cleanliness. The only place I've been that is close to as dirty as Maputo is the non-tourist parts of Egypt.
+</p>
+
+            
+                <p>
+On the upside, Maputo has lots of beautiful old buildings left over from it's days as a Portuguese colony. Some of them are in a poor state of repair, but some of them seem reasonably well maintained. In the swanky part of town there are even some fancy modern buildings. The area around these buildings is still strewn with rubbish, but the buildings are pretty nonetheless.
+</p>
+
+            
+                <p>
+After Mozambique expelled it's Portuguese colonists, it found itself missing the foreign investment and expertise. It thus decided to embrace the Soviet Union and become a single-party central-control communist state. The upside of this was that the Russians built them some ugly soviet buildings. The downside was that the US created a proxy terrorist group with the aim of destabilising the country. To make things worse, Mozambique chose to give support to the ANC, which caused South Africa to chip in on the anti-Mozambique-government terrorism fund too. One consequence of this mess is that many streets are names after communist dictators, including Kim Il Sung and Chairman Mao.
+</p>
+
+            
+                <p>
+Mozambique is now trying to style itself as a beach holiday destination for westerners. It is blessed by long white sandy beaches and great scuba sites, but this is spoiled by rubbish across the beaches and a lack of anyone who actually knows how to get to the scuba sites. Even the supposed "tourist information" booth didn't know where anything was or how to get there, and my map seemed to be largely a work of abstract art, with only a vague correlation with actual streets and businesses. The portuguese manager of my hotel summed up the Mozambique way of life quite well: "I don't think I could ever live in Europe. In Europe people are always running around trying to get things done. Here in Mozambique nobody cares about getting things done. We just hang out, work when we feel like it, and enjoy the company of our friends. There is none of that European obsession with getting things done. I like to say that Mozambique is the only Latin American country in Africa.". While this attitude can be great if you are a person who would like to spend your life sitting by the beach drinking beer, it can make the country quite annoying if you actually would like to get things done or would rather the beaches weren't covered with broken beer bottles.
+</p>
+
+            
+                <p>
+Mozambique is also the first country I've been in where the language barrier has been a problem. In South Africa and Botawana, English is the first language. In Ethiopia and everywhere else, people learn English at school. In Mozambique people speak their native language and Portuguese but English speakers are rare and good English speakers rarer still. This was a particular problem when checking out of my hotel because the English speaking man who had checked me in had been replaced by a man who spoke no English and didn't understand either that I wanted to check out or that I wanted him to book a taxi for two hours time. Eventually he kind of understood, but hailed me a taxi immediately rather than booking one for the future.
+</p>
+
+            
+                <p>
+My original plan had been to take a bus to Mozambique, spend a day in Maputo, a day scuba diving, and then drive a rental car across South Africa to Cape Town. In the end I abandoned the scuba diving since nobody knew how to get to a nearby dive site, and my right ear had become blocked (it still is - very annoying. My ears seem to be conspiring to stop me diving.). I also decided to fly to Cape Town rather than driving after a Dutch girl on the bus convinced me that driving from Maputo to Cape Town in 6 days was physically impossible.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Mozambique&zoom=5&size=300x300&sensor=false&markers=red|Mozambique'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

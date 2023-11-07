@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sarajevo part 2 - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Sarajevo part 2</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>July 28 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/07/12814231-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/07/12814233-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/07/12814234-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/07/12814235-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/07/12814237-photo&#32;2.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/07/12814231-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/07/12814233-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/07/12814234-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/07/12814235-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/07/12814237-photo&#32;2.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+I got a bit of push-back about my use of the word "normal" in my previous post, so I think I should elaborate.
+</p>
+
+            
+                <p>
+I feel comfortable in Sarajevo in a way that I feel comfortable in few cities. The architecture us beautiful. The downtown is pedestrianised and the whole city is designed to be walked around. The people are always smiling and are approachable and helpful without being pushy. There are few signs of poverty. There is a vibrant cafe culture and a wide variety of interesting shops selling interesting things. Every street corner has someone selling good ice cream. There are big clean supermarkets selling good quality familiar food. Nothing about the city feels at all threatening. The vibe of the city feels like a more lively version of Cambridge. The whole vibe of the city is so gentle and pleasant, I feel safer and more comfortable here than I do in Berkeley or London. I can imagine I might want to live here. I love Sarajevo.
+</p>
+
+            
+                <p>
+Seeing bullet holes in Sarajevo is as jarring as seeing bullet holes in Marks and Spencer's. It just seems out of place. War isn't supposed to happen in nice places.
+</p>
+
+            
+                <p>
+Of course If you look under the surface, Sarajevo has more than it's fair share of problems. The economy and infrastructure are still crippled from the war. Unemployment is at 50% and many buildings out of the centre are bomb-damaged communist monstrosities. But the spirit of the city and the people make it hard not to want to root for it.
+</p>
+
+            
+                <p>
+I spent most of today doing two guided tours of the city. In the first tour, we were shown various war sites, including the tunnel that was used to smuggle supplies into the city while it was under seige from the Serbian forces. The second tour was a one-on-one walking tour around the city. Although the tours focussed on the sites, the most interesting part was being able to hear about the siege from the point of view of two people who had lived through it. The following is my attempt to convey what my guides told me about the siege. I have not attempted to check other sources to verify any claims:
+</p>
+
+            
+                <p>
+"People think of the war as having been about religion, but Sarajevo was a city that had few religious tensions. Before the war the city was 50% Muslim and 50% Christian, with the Christians themselves a mix of Catholics and Serbian Orthodox. However few people were strongly religious or identified as being part of a separate group. The culture was largely secular and the intermarriage rate between Muslims and Christians was 40%.&nbsp;
+</p>
+
+            
+                <p>
+"After Croatia and Slovenia left Yugoslavia the leaders of Bosnia (then an administrative subregion) decided that Bosnia should also be independent. Some say this is because they feared persecution from the Serbian nationalists who led Yugoslavia. Others say that they wanted control of the rich mineral resources of Bosnia, including oil and gas. The normal people of Sarajevo understood little of what was going on between their leaders. They just wanted to continue to live their lives in peace.
+</p>
+
+            
+                <p>
+"After Bosnia declared independence, the Serbian leadership took control of the former-Yugoslavian army and laid siege to Sarajevo. Sarajevo is set in a narrow valley, surrounded by steep hills (the setting for the winter olympics) making it an easy target. The Serbs sat in the hills and shelled the city from above continuously. Numerous Serb snipers camped out in the hills and fired at anyone who went outside. It seemed to normal people that the Serbs wished to destroy Sarajevo and non-Serbian Bosnia with it."
+</p>
+
+            
+                <p>
+During one of our tours we were shown a video of the shelling of Sarajevo. It was scary to see videos of bombs exploding in places where I had walked only 20 minutes earlier and to see people running it panic, looking just like the people who had been there minutes before. When it got back it was hard to not feel a little fear when looking a the hills.
+</p>
+
+            
+                <p>
+Our first guide made clear that she did not blame the normal Serbian people. They had been fed a story by their government and their church that Bosnian independence was a threat to their religion and their way of life. They were being told that Yugoslavia was rightfully a Christian land and that Bosnian independence was part of an Islamic attempt to conquer their country. The army was blessed by the church and told they were doing God's work and fighting evil. Many Serbian fighters were from rural areas, were very religious, and were used to thinking about things in simple ways.
+</p>
+
+            
+                <p>
+The UN responded to the siege by doing more harm than good. They sent in troops who were allowed to do little more than watch and hand out pitifully inadequate food supplies. They set up an arms embargo, despite the fact that one side already had all the weapons it needed and the other side didn't even have an army. The acted as if they were even-sided observers of a war, despite the fact that in this war, only one side was doing the fighting.&nbsp;
+</p>
+
+            
+                <p>
+Eventually the Serbs made a miscalculation with the massacre if Srebrenicia. The UN had declared the town of Srebrenicia to be a safe area that civilians could take refuge in under UN protection. The people there were all unarmed civilians. The UN had made clear that no weapons were allowed in the protected area. However the UN once again did more harm than good by refusing to protect the people when the Serbs eventually attacked. Rather than protecting the people, the UN had just conveniently disarmed them and assembled them in one place, making it easier for the Serbs to kill them. When the Serbs entered the camp they systematically separated the adult men from their families and executed them, killing over 8000 people from under the noses of the UN. This act was so egregious that it forced the international community to finally take action and force the Serbs to stop the war.
+</p>
+
+            
+                <p>
+It is clear that many people in Sarajevo feel they were betrayed by the UN and that the UN is impotent at best and harmful at worst.&nbsp;
+</p>
+
+            
+                <p>
+Interestingly, the Bosnian people seem to have little respect for the Bosnian leadership. Sarajevo got caught up in someone else religious war and even though the war is over, the new leaders are seen as corrupt and incompetent. Many people hark back to the communist rule of Tito and to the "benevolent dictatorship" of the Austo-Hungarian empire and the Ottoman empire.
+</p>
+
+            
+                <p>
+It is hard not to get emotional in Sarajevo.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Sarajevo&zoom=5&size=300x300&sensor=false&markers=red|Sarajevo'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

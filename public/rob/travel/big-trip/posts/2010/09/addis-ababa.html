@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Addis Ababa - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Addis Ababa</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>September 21 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/09/15303931-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/09/15303932-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/09/15303933-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/09/15303934-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/09/15303936-photo&#32;4.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/09/15303931-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15303932-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15303933-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15303934-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15303936-photo&#32;4.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Like many westerners, my image of Ethiopia was formed by the Live Aid famines. It thus felt a little weird to arrive in a city that is vigorously fertile. It is currently the end of the rainy season and there is stuff growing everywhere.
+</p>
+
+            
+                <p>
+Another thing that might surprise people is that Ethiopia is actually quite cold. Much of the country is highlands and so the temperature rarely exceeds the mid thirties (centigrade). Right now it is around 20 in Addis. The weather is actually surprisingly similar to San Francisco. It has a mild climate and the year is divided into a rainy season and dry season.
+</p>
+
+            
+                <p>
+Ethiopia is very poor (HDI of 0.414, 170th out of 182), but the poverty feels very different to the poverty in Egypt. Although the people have very little and live hard lives, they seem to have a lot of dignity. Even the poorest areas seem to be quite clean and tidy and the people in them smile at you - a stark contrast from the dirty slums I saw in Egypt.
+</p>
+
+            
+                <p>
+The people I've met seem lovely. Although people will often ask you to give them money, they are always very polite about it and there is none of the harassment that one gets as a westerner in Egypt.
+</p>
+
+            
+                <p>
+Although Ethiopia is in Africa, it is also just across the red sea from the middle east and so the culture has been influenced a lot by the middle east, and Israel in particular. The native language is Amharic, which is closely related to Hebrew and Arabic. The rulers used to all claim to be direct descendants of King Solomon. Until fairly recently there was a substantial Jewish population (now largely moved to israel), who claim to have been there since before the Babylonian conquest. The national symbol is the lion of Judah. They were the second nation in the world to convert to Christianity (after Armenia), converting before the Romans. One can even find restaurants that serve challah.
+</p>
+
+            
+                <p>
+I spent my day in Addis visiting two museums and walking randomly around the town. The ethnographic museum contains various well-presented (someone should get the Ethiopians to re-do the Egyptian museum) exhibits about Ethiopian culture. One thing that was a little disconcerting was the amount of importance various tribes seemed to attach to how many people you have killed from other tribes - it can even effect the size of your grave site.
+</p>
+
+            
+                <p>
+In the national museum it was amusing that many of the displays just contained a photo of an item, accompanied by a note saying the original was in the British Museum. On one hand it is a bit sad that the British stole all the best stuff from countries all over the world, but on the other hand I think it is very convenient that one can go to one place and see well-presented displays of all the most interesting things in the world without having to spend a fortune of air fares.
+</p>
+
+            
+                <p>
+I rounded the day off with one of the best meals of my trip, at a traditional restaurant. I can confirm that the Ethiopian food in Berkeley is indeed authentic. The restaurant was actually in a slum area, but it was recommended in the guide book and was indeed very good.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Addis+Ababa&zoom=5&size=300x300&sensor=false&markers=red|Addis+Ababa'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

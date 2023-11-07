@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Bus to Shire - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>The Bus to Shire</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>September 28 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/09/15565545-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/09/15565548-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/09/15565549-photo&#32;2.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/09/15565545-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15565548-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/15565549-photo&#32;2.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+My original plan had been to spend a few days trekking through the wilds of the Simien mountains, but sadly I ended up chickening out. The main reason was that I seemed to have injured my right foot. All the hiking I had been doing seemed to have done something undesirable to one of my tendons, with the result that I got a shooting pain whenever I applied a twisting force to the front of my right foot. In normal circumstances I would have pushed on regardless, but there are better places to discover one can no longer walk than the Ethiopian wilderness, two days walk from the nearest road, surrounded by creepy crawlies.&nbsp;Other reasons for chickening out included the fact that people who had just come back told me it was cold, muddy, and foggy this time of year, the fact that I had no wet weather gear, cold weather gear, tent, or hiking boots, and the fact that if I went straight to Axum I would be able to see the celebration of Meskel.
+</p>
+
+            
+                <p>
+The result of all this was that rather than venturing into the mountains, I instead needed to catch a 12 hour bus to Shire, a town near Axum. Like most buses, the bus left at dawn. Many Ethiopians have no watch and so most important events happen either at dawn or dusk - times everyone can easily identify. Leaving at dawn also maximises the chance of the bus arriving at it's destination before dusk. Since there is no street lighting and few buses have working headlights, arriving before dusk is a good idea.
+</p>
+
+            
+                <p>
+The bus journey was interesting, but was interesting in much the same way that being kicked in the face is interesting. It was interesting to discover the ordeal that local people have to go through in order to travel long distances, but I'd much rather never have to make that discovery again. The road to Shire was built by the Italians during their brief occupation of Ethiopia in the 1930s and there was little sign that it had seen much attention since then. It is a dusty potholed dirt road that winds along a series of cliff faces, working it's way through the Simien mountains. It seems that the Chinese are in the process of finally resurfacing it and fixing it up, however in the short term this just means that you sometimes have to wait a while for the bulldozers to get off the road and let you through, and the road currently being dug up is even bumpier than the rest of the route.
+</p>
+
+            
+                <p>
+I think the bus was definitely designed for people shorter than me. In order to get into my seat I was forced to physically wedge myself so that my buttocks were pressed firmly into the back of my seat and my knees were pussed solidly into the seat in front. An annoyingly placed metal bar pushed onto my kneecaps and seemed determined to separate my kneecaps from my legs on every bump. After a while the kind person next to me offered to swap, giving my an aisle sear. Sadly this seat titled outward, with the result that I would slide off it in every tight turn.
+</p>
+
+            
+                <p>
+Ethiopia would not be an enjoyable place to be if you wanted to get somewhere at any particular time or wanted to follow a particular schedule. At one point the driver disappeared for an hour and a half and we were told he had gone to visit some relatives. There were also frequent delays due to construction or due to "checkpoints". A "checkpoint" consists of a man with a gun and a piece of string. The string is tied across the road between two sticks and has a variety of dirty rags and plastic bags tied to it so you can see it. When you stop at the string, the man with the gun orders everyone our of the bus, then appears to do nothing in particular, until he orders everyone back on again a while later.
+</p>
+
+            
+                <p>
+Checkpoints became particularly frequent as we got close to the border with Eritrea. Ethiopia and Eritrea still have a tense relationship and the roadside was strewn with burned out tanks from their recent war. We also went past a refugee camp housing people who were displaced by the war. Unlike Jenin, there were definitely no quotation marks required for the description of this camp.
+</p>
+
+            
+                <p>
+As one would expect, several people brought chickens with them. The driver had two cockerels tied up under his seat. Every now and then they would start fighting and he would have to reach under his seat to pacify them. The driver had a cassette of Amharic music that he played on repeat for the entire journey. On the first few played I thought it sounded pretty cool and I was getting into it. By the tenth time round it was starting to feel like the "Barney torture" from Guantanamo Bay.
+</p>
+
+            
+                <p>
+One of the disconcerting things about buses is that the front wheels are often quite a long way back from the front. This can make for scary moments when driving along a crumbly cliff-edge road. On every hairpin it felt like the driver had turned too late and we were going over the edge, until miraculously we somehow made the turn and continued on to the next hairpin.
+</p>
+
+            
+                <p>
+Dust. I didn't mention the dust. Suffice it to say that when I blew my nose that evening the output was completely brown.&nbsp;
+</p>
+
+            
+                <p>
+Due to all my dilly-dallying about whether to go trekking in the Simien Mountains, by the time I had decided my schedule there were no flights left out of Lalibela before I was due to leave the country. Without flight options, the only way out would have been to take a two day bus across some of the worst roads in Ethiopia. I thus reluctantly decided to skip Lalibela and fly directly from Axum to Addis Ababa.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Shire,+Ethiopia&zoom=5&size=300x300&sensor=false&markers=red|Shire,+Ethiopia'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Mursi - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>The Mursi</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>October  5 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/10/15846308-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/10/15846309-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/10/15846310-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/10/15846311-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/10/15846312-photo&#32;5.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/10/15846308-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/15846309-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/15846310-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/15846311-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/15846312-photo&#32;5.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+The Mursi are regarded as being one of the weirdest of all the tribes in Africa. Even the people from the other Omo tribes think the Mursi are bonkers. They are most famous for their "lip stretching" tradition. When a woman reaches sexual maturity her bottom lip is cut away from her chin and then stretched using a series of increasingly large lip plates until it is so long that it can hang below her chin when the plate is removed.
+</p>
+
+            
+                <p>
+Meeting a Mursi woman feels like meeting an alien from Star Trek. They look so strange that you have to remind yourself that they are human. Since they don't have a proper top lip the women can only talk in grunts and they are constantly dribbling.
+</p>
+
+            
+                <p>
+The Mursi village we travelled to is the one nearest to a gravel road and consequently gets a lot it visitors. Indeed it seemed that tourism had become a major part of the local economy. We had to pay a 100birr fee to enter the village and had to pay 5 birr to each person we photographed. It felt like being in some kind of strange human zoo and I wondered if money from tourism was a big part of why the Mursi continue to mutilate themselves. Mursi people would continuously grab at me and try to get me to photograph them. It felt like I was at a freak show and people were competing to be the weirdest.
+</p>
+
+            
+                <p>
+My guide told me that the Mursi don't watch English Premiership Football.
+</p>
+
+            
+                <p>
+We had to leave early to get to the Mursi village. We had been warned that if we arrived too late then they would be drunk and might be dangerous. Even in their sober state they were considered sufficiently dangerous that I was required to bring an armed bodyguard with me. I felt like quite a celebrity arriving in the village with an entourage of three people: my driver, my local guide, and my bodyguard.
+</p>
+
+            
+                <p>
+On the drive back from the Mursi village I saw three Banna Tribesmen, in full tribal costume, fixing their broken down pickup truck. Compared to the Mursi, the Banna might as well be Westerners.
+</p>
+
+            
+                <p>
+I spent the evening at a hotel in a Konso village. My hotel had no lighting, electricity, or running water. In theory it was supposed to have all three. There were light bulbs, taps, and power sockets, but those may just be there to fool potential guests. My hotel room also had some giant insects crawling around the floor. I killed one of them, but when I woke up the next morning, the body had gone - presumably taken by another creepy crawly.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Jinka,+Ethiopia&zoom=5&size=300x300&sensor=false&markers=red|Jinka,+Ethiopia'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

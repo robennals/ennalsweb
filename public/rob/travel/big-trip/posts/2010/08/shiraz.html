@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shiraz - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Shiraz</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>August 29 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/08/14366129-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/08/14366131-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/08/14366132-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/08/14366133-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/08/14366134-photo&#32;3.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/08/14366129-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/14366131-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/14366132-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/14366133-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/14366134-photo&#32;3.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Shiraz is known as the city of poets and the city of roses.
+</p>
+
+            
+                <p>
+Before the revolution Shiraz was also famous for the quality of its wine. Like Tehran, Shiraz is a relatively secular city where few people wear the chador and women wear their headscarves as far back as they think they can get away with, However Shiraz is only about a tenth the size of Tehran.
+</p>
+
+            
+                <p>
+Alcohol is illegal in Iran, with one exception: religious minorities such as Christians and Jews are allowed to make wine for their own use, but they cannot sell it or share it with those outside their community. Thus the only way that an outsider could try the famous Shiraz wine would be to attend communion at a Christian Church. Fortunately there is an "Anglican" church right near my hotel.
+</p>
+
+            
+                <p>
+The Anglican Church of St Simon the Zealot commemorates the death of Simon the Apostle who is believed to have died in Persia. Unfortunately getting in seemed to be harder than expected. I arrived at around 8:45 but the only signs were in Persian, none of them seemed to contain numbers (I can do Persian numbers) and nobody around seemed to know when the services were. I talked to a passer by (who turned out to be an Iranian Jew) who thought there might be a service at 5pm, but it wasn't clear whether an outsider would be welcome and it seemed likely that everything would be in Persian (the "Anglican" part had got my hope up that there might be some English).
+</p>
+
+            
+                <p>
+It wasn't possible to see much of the church since it was hidden behind a thick high wall. Given that it is an "Anglican" church I had expected a traditional English church with a steeple. Instead from what I could see of the building from over the wall, it seemed to look just like a mosque, except with crosses all over it. It would have been interesting to see what a service is like.
+</p>
+
+            
+                <p>
+I asked the Jewish guy what he thought Iranians thought of Israel. He told me that he thought most Iranians preferred Israel to the Palestinians (better a Jew than an Arab), but the government and "Hezbollah types" hated Israel. Earlier I had talked to another Iranian who said he thought "a lot" of Iranians support Israel. It seems that Iranian support for Israel may be more widespread than I had expected. That said, my past experience suggests that Iranians are often over-confident in assuming that everyone else thinks the same as they do, so I'm still a little suspicious. I also suspect that the people an Iranian Jew hangs out with may not have typical views about Israel.
+</p>
+
+            
+                <p>
+The main landmark in Shiraz is a castle in the centre of town. The castle looks quite dramatic from the outside, but was quite disappointing inside. One can't go up any of the towers, the centre courtyard is filled with discarded office equipment (?) and the "waxwork museum" only had one waxwork. Fortunately it only cost 50 cents to get in and it was right by my hotel so I wasn't too bothered.
+</p>
+
+            
+                <p>
+Another notable site in Shiraz is the tomb of Hafez. Hafez is regarded as Persia's greatest poet and is treated with the kind of reverence that the English give to Shakespeare or Chaucer. The tomb itself was fairly simple, but it was interesting to see a glimpse of Iranian culture as Iranian families came to see the tomb and some sat down in the surrounding gardens to read his work.
+</p>
+
+            
+                <p>
+My guidebook had told me that Shiraz has a river, but this "river" doesn't appear to actually have any water in it. It is possible that water flows at other times of year, but in August it is just a dusty ditch, albeit a dusty ditch with a rather nice bridge over it.
+</p>
+
+            
+                <p>
+Further to the north in a narrow gorge is the rather pretty north gate of the city. A scenic waterfall ran down one of the cliffs, but further inspection revealed that the waterfall may have human assistance. There is a pumping building at the bottom, pipes run up to the top, and the water doesn't seem to go anywhere after it reaches a pool at the bottom.
+</p>
+
+            
+                <p>
+My guidebook had told me that one could get excellent views of the city if one climbed to the top of the cliffs. I found a suitable set of stairs and made my way up. Around half way up there was a tape across the path saying "danger", but everything looked fine to me, so I stepped over and kept going. Soon the path started to disintegrate and the route turned into a rough scramble up a crumbly rock face, but I was almost there so I kept going. Eventually I reached the top, and then realised I hadn't got a clue how to get down again. I was at the top of a high cliff, the edge seemed to be steep drop, the rock was loose and crumbly, and I couldn't remember how I got up. Fortunately I ran into a friendly Iranian couple who showed me a good route down, and showed me their stylish Nike-logo wedding rings.
+</p>
+
+            
+                <p>
+On my way back I got myself a faludeh - a local desert made from rosewater, starch noodles, and lemon juice. I'm not yet sure if I like it, but it's definitely interesting.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Shiraz&zoom=5&size=300x300&sensor=false&markers=red|Shiraz'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

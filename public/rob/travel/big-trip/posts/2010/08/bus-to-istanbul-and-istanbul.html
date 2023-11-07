@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bus to Istanbul and Istanbul - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Bus to Istanbul and Istanbul</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>August  9 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/08/13452657-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/08/13452658-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/08/13452659-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/08/13452661-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/08/13452662-photo&#32;3.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/08/13452657-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13452658-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13452659-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13452661-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/13452662-photo&#32;3.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+I'm sure there are some people who like watching loud Turkish gameshows during an overnight bus, but I would rather sleep. This particular gameshows seemed to be about tractors, men in suits, and women shrieking. If I spoke Turkish it might have been fascinating, but I just wanted to sleep.
+</p>
+
+            
+                <p>
+I have yet to master the art of sleeping in buses. In fact I suspect those who claim they can do it may just be faking it. I put in earplugs but had to remove then after a few minutes because they gave me incredible earache that came on just as it seemed I might be drifting off to sleep. I think I tried every possible way of arranging my body on the seat but all of then were uncomfortable in their own unique way.&nbsp;Just when I thought tiredness might be getting the better of discomfort, we stopped for an hour for Turkish passport controls, which seemed designed more to wake us all up than to actually control anything.
+</p>
+
+            
+                <p>
+At 7am, after 8 hours of not sleeping, we pulled into Istanbul, I checked into my hostel, and set about exploring Istanbul. Istanbul has an incredibly rich history, with interesting buildings from the Turks, Romans, Greeks, crusaders, and a variety of others. It seems that everyone who was anyone built something in Istanbul.
+</p>
+
+            
+                <p>
+Istanbul is filled with huge mosques, all of which are beautiful and most of which look exactly the same. The "domes on domes on domes plus lots of spiky minarets" look is pretty cool, but the close repetition of ideas makes it feel like everything has rolled off the production line of the local mosque factory.
+</p>
+
+            
+                <p>
+There is an interesting cultural mix here. Some people look very European while others look very Islamic. Women wear anything from skimpy tops to full burkas, with many women wearing full length wool coats that look far too hot. The men are all wearing normal western summer wear, irrespective of what their wives wear - although based on my small unscientific sample, it seems that the more covered the woman the fatter the man.
+</p>
+
+            
+                <p>
+Walking through Istanbul, I spend a lot of time telling people that, no I do not want to buy a carpet, not even at a special price. Every apparent greeting, "hello my friend", or offer of conversation seems to be rapidly followed by the inevitable discussion of carpets. It feels like someone has stuck a label on my back saying "this man needs a carpet".
+</p>
+
+            
+                <p>
+Tomorrow I'll be flying off to visit Ephesus, or at least I think I will be. I booked the flights on a website that was entirely in Turkish, using a dictionary to translate it, and I had to guess what some of the options were.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Istanbul&zoom=5&size=300x300&sensor=false&markers=red|Istanbul'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

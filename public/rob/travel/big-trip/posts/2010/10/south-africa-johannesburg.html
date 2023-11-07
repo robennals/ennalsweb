@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>South Africa: Johannesburg - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>South Africa: Johannesburg</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>October 11 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/10/16055262-photo&#32;5.JPG'>
+                    
+                        <img src='../../../image/2010/10/16055263-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/10/16055264-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/10/16055266-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/10/16055267-photo&#32;1.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/10/16055262-photo&#32;5.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16055263-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16055264-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16055266-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16055267-photo&#32;1.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Johannesburg is a weird place. Sometimes it feels a lot like England. People drive on the left. The non-Afrikaans white accent is almost indistinguishable from an English accent. You can get meat pies everywhere. There are fish and chip shops. Many of the older buildings look very English. The main language is English. Many of the places are named after places in England. However there is a lot that is very African. Most people are black and the culture of the black population has a lot in common with other black countries.
+</p>
+
+            
+                <p>
+One of the things I find fascinating about South Africa is the insight it gives into colonialism in general. While South African Apartheid was unique at the time it ended, what happened in South Africa was fairly typical for a European colony. The oppression of the blacks by the whites in South Africa was broadly similar to the way the Americans treated the Native Americans and Blacks, the way the British treated the Indians, and the way most African colonies were run. What made South Africa unique was not so much what happened but how long it continued to happen for.
+</p>
+
+            
+                <p>
+It was particularly interesting for me to be in South Africa because several members of my family played significant roles in bringing apartheid to a close. My great uncle John was director of the Anti-Apartheid movement, my great uncle Martin was Secretary General of Amnesty International and pushed for the release of ANC prisoners like Nelson Mandela, and my grandfather David was a minister in the UK government who made ending apartheid a personal cause.
+</p>
+
+            
+                <p>
+South Africa is in a very interesting position right now. Apartheid ended in 1994, but that doesn't mean that everything is rosy. Crime is out of control, rape has become a normal part of life (25% of men admit to having raped someone), the government is outrageously corrupt, AIDS is at epidemic levels and not being taken seriously by the government, the people are still largely segregated, and many people want to implement land reforms similar to those that destroyed the economy of Zimbabwe. The fall in South Africa's standard of living since the ANC took control is almost unprecedented for a country not at war (from 67th to 120th by UN figures).
+</p>
+
+            
+                <p>
+The current president, Jacob Zuma, is a controversial figure. He has is plagued by corruption charges, has an unfortunate habit of raping people, and has chosen as his anthem the ANC paramilitary song "bring me my machine gun" which many interpret as calling for the killing of whites. Zuma's ability to deal with the AIDS epidemic is perhaps best summarised by the fact that, after raping an HIV-positive woman, he claimed he would be okay because he showered afterwards.
+</p>
+
+            
+                <p>
+During apartheid, the movement of blacks was controlled by the much hated "pass system". Ostensibly to protect the safety of whites, blacks were required to live in separate districts (like Soweto) and could only enter a white district (like Johannesburg) if they had a pass showing that they had a legitimate reason to be there (usually a job). When the pass system was ended, poor blacks (including migrants from other African countries) flooded into the cities, encouraged by government promises of jobs for all and the belief that they could share in the wealth the white cities had had. The result was a surge in crime that has made South Africa one of the most dangerous places in the world. Official government figures say crime has gone down in the last few years, but independent agencies say the government is now faking the figures and South Africa is the most dangerous country in the world that isn't designated a war zone. During the World Cup the government, afraid of embarrassing fan deaths, partially reintroduced the pass system, creating an exclusion zone around the matches into which people (of any race) required a pass to enter.
+</p>
+
+            
+                <p>
+The whites responded to the crime wave in much the same way as in the US. They abandoned once-white Johannesburg to the blacks and retreated to gated communities in the northern suburbs, surrounded by electric fences and guarded by armed guards. Wandering around the suburbs you don't see buildings but instead just a series of walls with electric alarmed fences and cameras. Critics argue that such gated communities should not be legal as they are just a continuation of the pass system by private means. However South Africa is not as segregated as before. Although you will see virtually no whites in black areas like downtown Johannesburg (I saw a total of five white faces during a four hour walkabout) you will see middle-class blacks in the guarded areas. The segregation is now more by wealth than just color and feels similar to the blurred segregation one sees in Los Angeles.
+</p>
+
+            
+                <p>
+One hot topic at the moment is a program called BEE, which stands for Black Economic Empowerment. Most high skill jobs are still held by whites and so BEE aims to fix this by forcing companies to fill a defined set of jobs with black candidates. Opinions on BEE are very polarised. One white person told me it was destroying South African companies because they were being forced to replace skilled workers with people who didn't have the skills needed to do their jobs but had political connections. He said that the the government saw a job as being a reward rather than a responsibility and didn't appreciate the need to hire people who are capable of doing the job. He said the correct fix would be to expand education so that blacks could get jobs on their own merits. By contrast a black person told me that BEE was essential as the country was controlled by racist whites who will never employ a black man in a skilled job unless forced to.
+</p>
+
+            
+                <p>
+Anti-discrimination employment legislation was also controversial. One white complained that he was required to hire blacks, but that if they decided to not do any work then he couldn't fire them without getting sued for racism.
+</p>
+
+            
+                <p>
+Another controversial topic is land reform. The western media often criticises South Africa for having not criticised Robert Mugabe's disastrous land reforms. According to several black South Africans I talked to, the reason the government doesn't criticise Mugabe is because most South Africans support Mugabe's actions and would like to see the same thing happen in South Africa. As one black person told me: "As an African your land is part of who you are. It is your mother. When the whites took our land they cut our umbilical cords. If I have land I am independent and self sufficient. Without land I am nothing more than a slave to my employer. What Mugabe did was right and most South Africans support him. Zimbabwe is not a bad as the Europeans say. They just want to make Zimbabwe look bad because they want their land back. The only mistake Mugabe made was that he should have done more to teach people to farm when he gave them land, but they will learn and everything will be good in time."
+</p>
+
+            
+                <p>
+I tried arguing that breaking up South Africa's huge industrial farms and giving them to low-tech subsistence farmers would destroy South Africa's main industry and cause their standard of living to plummet, but this argument was rejected. Having the white farmers own the land was immoral. Giving it back to the people is "the right thing to do" irrespective of economic issues.
+</p>
+
+            
+                <p>
+Needless to say, many whites are worried about what is going on. One white person I talked to said he gave the country a maximum of ten years before it collapsed like Zimbabwe and he said that most of his friends wanted to emigrate to other countries. He said that there was a big brain drain as the most highly skilled white workers were leaving the country.
+</p>
+
+            
+                <p>
+Black people seem more optimistic. One person said "yes, South Africa is having problems now and the government is corrupt, but this will pass. These people have not had power before and they are not experienced with how to use it yet, but they will learn."
+</p>
+
+            
+                <p>
+My first activity was a visit to the constitutional court. This is a building filled with symbolism. It is constructed from the remains of a former prison for black prisoners, and designed to evoke the "gather under a tree" model used in a traditional african court. My guide talked about "the old times" before whites came in a wistful way and seemed keen that things should return to the way they used to be before they became tainted.
+</p>
+
+            
+                <p>
+My next activity was a guided tour of Soweto. Soweto as an abbreviation for southwest township and was an area close to Johannesburg where black workers could live. Soweto is still where the majority of the people in the Johannesburg metropolitan area live. It was interesting to see Soweto, coming from Ethiopia. Soweto has a reputation for being a desperately poor area and it is certainly a lot more basic than the white area, but for Africa it isn't bad at all. The average Soweto house is much nicer than the average Ethiopian house and similar to an average Botswana house. Employed people who can pay rent live in "bank houses" that vary in size from the modest to the glitzy. Poor people live in government provided "matchbox houses" which are small, but still much better than a rural hut in an Ethiopian village. The worst accommodation is the informal self-built corrugated iron shacks on the edge of Soweto, which largely house recent arrivals and foreign immigrants for whom the government has not yet built a house. Even these houses are no worse than some housing I saw in Ethiopia and Mozambique.
+</p>
+
+            
+                <p>
+What made being black in apartheid South Africa so unpleasant was not the statistics of the living conditions (which were ironically amongst the best in Africa) but the oppression of living in a place where they were constantly reminded that they were second class citizens and had little control over their lives. Living as a subsistence farmer may be a short hard life, but you were independent, you were equal, and you controlled your own destiny. Similar moral complications apply to black slaves in America, who ironically had a better live expectancy than they would have had in Africa, and their descendants in the US now, who ironically have much better opportunities than they would in Africa - everywhere in Africa people tell me they dream of moving to the US. In practice people care little about quality of life measurements such as their life expectancy, literacy rate, or income. What they care about is their social status relative to those they see around them. Statistically speaking, a poor black man in Oakland probably has a better quality of life than an Egyptian pharaoh, yet I suspect most people would much rather be a pharaoh.
+</p>
+
+            
+                <p>
+Being in Soweto also made me think about the geography of inequality. Being black in South Africa was no worse physically that being black elsewhere in Africa, being white was no better than in a typical western country, a black person elsewhere in Africa was locked out of white areas and white jobs in the west even more than they were locked out of white parts of South Africa. While it was demeaning that a black person would need a pass to enter a white area in South Africa, it was far harder for a black african to get a pass (= work visa) to enter a white country and take a white job somewhere else in the world. What made South Africa special was not the richness of the white areas, the poorness of the black areas, or the presence of boundaries between them, but the fact that the two worlds were closely interleaved spatially and the two sides got to observe and interact with each other, with whites employing blacks in their homes and businesses rather than in remote sweatshops. If you were to scatter bits of Norway throughout Somalia then tensions would almost certainly arise, especially if the Norwegians decided to get cheap labor by issuing temporary work visas.
+</p>
+
+            
+                <p>
+Another big reason for discord is the fact that the whites were living in areas that had been black, however that issue is fraught with subtleties since much of South Africa was only conquered by the black Bantu people in the 15th century (the whites arrived in the 17th century) after they drove out the San Bushmen. One of the ironies of diplomacy is that pretty much everyone who has had land at any point got it by driving out and oppressing someone else who was there before. If the Bantu push for white land to be returned to them then the San (who are still around and still don't much like the Bantu) might decide to roll the clock back another two hundred years and have it handed to them instead. This isn't to say that the whites have a right to keep the land, so much as to say that everything gets icky when you try to find a morally pure solution.
+</p>
+
+            
+                <p>
+To some extent, Apartheid South Africa was the modern world in microcosm. As a white European, I am free to travel the world without hindrance, entering both black and white countries. In my trip the only country I needed an advance visa for was Iran; everywhere else i just showed up, waved my British passport, and walked in. By contrast, the people in the poor countries I visit tell me that it is close to impossible for them to leave their country and pointless to dream of getting a high skill job. Swap black township for black country, swap white city for western country, swap oppression between individuals with oppression between countries, and South African apartheid maps remarkably neatly onto the modern world as a whole.
+</p>
+
+            
+                <p>
+Ironically, one of the big lessons of colonialism seems to have been "if you want to hold onto a colony, make sure you kill all the previous inhabitants". America is in little danger of being forced to hand itself over to the native Americans because there are so few left. It reminds me of the common advice in the US that if you shoot an intruder them you should shoot to kill. If they die then a court will almost always rule that you acted in self defense, but if they live then they can sue you for their medical costs. More moral ickiness.
+</p>
+
+            
+                <p>
+My second visit of the day was to the Apartheid Museum. As always, what was interesting was not just what was said but how it was said. The museum was very well put together. It was clearly designed to create an emotional response, and contained a well chosen set of video clips and artefacts that made it easier to understand how people felt at the time. If however you wanted a deeper academic analysis of *why* things happened the way they did, how the prevailing moral philosophies about racial equality changed, or how events in South Africa related to events in other countries then you would find the museum disappointing - that's not what it's about.
+</p>
+
+            
+                <p>
+One notable thing in both the museum and elsewhere is the extent to which Nelson Mandela, and to a lesser extent the ANC, has been canonised. Mandela's face is everywhere and every significant object seems to be named after him. The only place I've previously seen this amount of government sponsored adoration of a person is Iran's worship of Ayatollah Khomeini - and that isn't good. Mandela managed to become a human symbol of the Anti-Apartheid struggle, and as such it has become taboo to criticise him, but his record is far from lily-white. He rose to prominence in the ANC as an advocate of violence and was largely responsible for shifting the ANC away from it's previous strategy of peaceful non-cooperation towards a new strategy that was more violent but ironically also more effective. He founded the ANC's paramilitary group and is linked to terrorist attacks that killed civilians. This isn't to say he wasn't a good person and didn't do good things - just that he has been somewhat airbrushed by history.
+</p>
+
+            
+                <p>
+People here complain that it can be dangerous to publicly criticise the ANC, particularly if one is white. The ANC identify themselves with the revolution against apartheid. To oppose the ANC is to be a racist who rejects the revolution and thus a legitimate target. One white person told me that when a group of vocal white government critics was recently murdered, the government response was to suggest that they got what they deserved, and one government official even sang a song in support of their deaths.
+</p>
+
+            
+                <p>
+In South Africa I get the feeling that the country is at an interesting point in it's history and nobody really knows what is going to happen next.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Johannesburg&zoom=5&size=300x300&sensor=false&markers=red|Johannesburg'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

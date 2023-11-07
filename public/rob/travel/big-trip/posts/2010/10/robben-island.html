@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Robben Island - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Robben Island</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>October 21 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/10/16470644-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/10/16470645-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/10/16470646-photo&#32;1.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/10/16470644-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16470645-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/10/16470646-photo&#32;1.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+Robben island is as island prison just off Cape town that is most famous for being the prison where Nelson Mandela and other ANC leaders were imprisoned.
+</p>
+
+            
+                <p>
+Like any high security prison, Robben Island was clearly an unpleasant place to me. Cells were small, conditions were harsh, food was bad, and prisoners were forced to do hard labor. One apartheid twist was that, in the early days of the prison, food, uniforms, and other conditions were different for different racial groups. We were shown a notice board that described the different food rations to be provided to each racial group.
+</p>
+
+            
+                <p>
+While there is clearly a lot of good reason to&nbsp;criticize the white apartheid government for the way they imprisoned black prisoners in Robben Island,&nbsp;I felt that the museum tour went overboard in places and weakened its case as a result.&nbsp;On the ferry to the island there was a long emotional audio section, with appropriate sad music, about how the white settlers had forcibly imprisoned lepers on the island and how "the tears of the lepers were the first to moisten the soil of Robben Island". Given that they had a major leprosy outbreak and the disease was believed to be highly contagious, using the island for forced quarantine doesn't seem entirely unreasonable. Similarly, while touring the prison we were often told about horrendous hardships that the prisoners had had to endure that, as far as I could tell, were common to all prisons. I would have been interested to learn in what ways Robben Island was different from other prisons of the same era that imprisoned people for similar crimes.&nbsp;
+</p>
+
+            
+                <p>
+Robben island held a mix of standard high-security dangerous criminals and political prisoners. The political prisoners were largely people who had committed terrorist acts, sabotaged infrastructure, organized riots, or were leaders of groups that did such things (including the ANC). The closest modern equivalent to Robben Island is probably Guantanamo Bay. I wonder if in the future we will be doing similar guided tours of Guantanamo, led by former inmates.
+</p>
+
+            
+                <p>
+We were told what was supposed to be a sweet story about how another prisoner had helped Mandela by smuggling out a manuscript of Mandela's book, and how Mandela had rewarded him by making him minister of transport when he was released. This was supposed to be a positive story of how Mandela remembered those who helped him out, but it seemed a good example of why the government is corrupt. If ministerial appointments and government contracts are seen as a personal asset that you use to reward your friends rather than a responsibility you assign to the most qualified person, then you are unlikely to get good government. Indeed the ministry of transport has been recently&nbsp;criticized&nbsp;for letting the once-excellent long-distance train system deteriorate so much that is now largely non-operational.
+</p>
+
+            
+                <p>
+There were some nice stories about prisoner inventiveness. One of my favourites was that, in order to&nbsp;get messages past prison censors, they would write notes on pieces of paper stuck inside tennis balls, and then "accidentally" hit the ball out of the prison compound while playing tennis in the prison tennis courts, so that the ball and message could be retrieved by an accomplice.&nbsp;
+</p>
+
+            
+                <p>
+Another interesting story was how the more educated prisoners would teach the others. President Jacob Zuma arrived having had no formal education and learned to read and write while in Robben Island.&nbsp;
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Cape+Town&zoom=5&size=300x300&sensor=false&markers=red|Cape+Town'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

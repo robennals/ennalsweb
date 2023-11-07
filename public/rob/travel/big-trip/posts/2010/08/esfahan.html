@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Esfahan - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>Esfahan</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>August 25 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/08/14180929-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/08/14180930-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/08/14180931-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/08/14180932-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/08/14180933-photo&#32;5.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/08/14180929-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/14180930-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/14180931-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/14180932-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/08/14180933-photo&#32;5.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+The people of Esfahan claim that their city is one of the most beautiful places in the world. Having spent two days there, it is hard to disagree with them. The spectacular Imam Square is the second biggest pedestrianised square in the world (after Tiananmen) and is surrounded by a collection of beautiful and varied buildings. Further south, the river is lined with well kept parks and cris-crossed by many beautiful bridges. I've been told that Esfahan is even better out of Ramadan, when the streets are lined with coffee shops and ice cream sellers - at least when they aren't being shut down by mullahs who are worried that the young might be flirting.&nbsp;
+</p>
+
+            
+                <p>
+One thing that is quite striking about Iran is just how civilised the place is relative to the way it is portrayed in the western media. If one watches TV news in the west then one could be forgiven for thinking that Iran is a third world country filled with slums and Islamic terrorists. Instead one finds a country that, mullahs aside, feels more modern than Turkey - a country that some people seriously think could join the EU. Tehran has a great modern metro system and Esfahan is currently being dug up to build one. The freeways/motorways are excellent. There are public toilets everywhere and they are usually clean (unlike the US). The signs usually include English translations. The buses are comfortable and leave on time. The cities are filled with beautiful buildings and museums. Many Iranians ask me "is Iran like you expected" and the answer has to be "no". Many Iranians know how their country is portrayed in the west and are quite offended. It makes me wonder how many other countries are quite unlike the way they are portrayed in the West. I wish I could have been to Iraq before the US invasion.
+</p>
+
+            
+                <p>
+The more time I spend in Iran, the more I realise I don't understand the country. Whenever I think I understand some aspect of how people think I have a conversation that reveals that things are actually far more subtle. While in the Esfahan bazar, I talked to a religious conservative who opposes the mullahs because he thinks that, by forcing Islam down peoples throats, they have caused the young to turn against Islam. The young always want to rebel against what the old try to make them do. When the Shah tried to make Iran secular, People instead became more religious, as a way of rebelling. Now that the Mullahs are forcing Islam on people, the young see Islam as something that crusty old men want to force them to do, and so they reject it. I can empathize. I didn't start to enjoy sport until it stopped being compulsory at school. Interestingly the same man also supports Israel over the Palestinians. He told me "why should we support the Palestinians? They are Arabs and the Arabs hate us. We have Jews in Iran and they are our friends. Iran should support Israel". I'm sure his opinions isn't the norm in Iran, but the fact that any religious conservative in Iran sides with Israel is surely surprising. More generally, the topic of Iranian dislike for the Arabs comes up quite often. I hadn't previously realised how much the Iranians dislike their Arab neighbors.
+</p>
+
+            
+                <p>
+Despite having few tourists from the west, Iran receives a fair number if tourists from neighbouring countries. I ran into a pair of Kuwaiti tourists, complete with white robes and head-dresses. After chatting for a while they invited me to join them for dinner. I thought this sounded fun, and asked them where they planned to eat, assuming it would be some special exotic place they had found. They said "we go to burger king" and pointed at a place that did indeed claim to be burger king but didn't look quite right. It had burger king menus, but they were attached to the walls with tape and the place didn't feel like it had been blessed by the king himself. I declined and found myself some aubergine soup instead.
+</p>
+
+            
+                <p>
+For my first day in Esfahan I had been battling with seemingly unstoppable diarrhoea and inexplicable tiredness. On my second day I realised why. Every time my digestive system misbehaved, I had taken what I thought was an Immodium tablet, however it turned out that I had got my tablets mixed up and I was in fact taking Sominex sleeping tablets. Oops.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Esfahan&zoom=5&size=300x300&sensor=false&markers=red|Esfahan'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Jenin Refugee Camp - The Big Trip</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            body {
+                margin: 0px;
+                margin-bottom: 100px;
+            }
+            .mast {
+                background-color: #666;
+                font-family: "Telex";
+                font-size: 24px;
+                line-height: 22px;
+                padding: 12px;
+                color: white;
+                white-space: nowrap;
+                height: 22px;
+            }
+            .mast a {
+                margin: 0px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            .back {
+                background-color: #299691;
+                text-decoration: none;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            .arrow-left {
+                float: left;
+                width: 0; 
+                height: 0; 
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;                 
+                border-right: 15px solid #299691;
+                margin-right: -5px;
+                margin-top: -4px;
+                margin-left: -10px;
+            }
+            h2 {
+                font-family: 'Telex';
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-family: 'Telex', Arial;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .author {
+                margin-bottom: 10px;
+            }
+            #image-frame {
+                overflow: hidden;
+                width: auto;
+                position: relative;
+            }
+            #image-scroller {
+                position: relative;
+                transition: left 1s;                
+            }
+            #image-scroller img {
+                max-height: 500px;
+                display: inline;
+            }
+            #single-image {
+                max-height: 500px;
+            }
+            .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                margin-left: 100px;
+            }
+            .thumbnails img {
+                max-height: 90px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+
+            #content, .author {
+                width: 500px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                color: rgb(51, 51, 51);
+            }
+            #map {
+                position: absolute;
+                left: 740px;
+                top: 700px;
+            }
+            #highmap {
+                position: absolute;
+                left: 800px;
+                top: 220px;
+            }
+            .index {
+                width: 150px;
+                overflow: hidden;
+                position: absolute;                
+            }
+            .postlink {
+                width: 150px;
+                height: 23px;
+                border: 1px solid #ebebeb;
+                padding: 10px;
+                font-family: 'Telex', Arial;
+                text-decoration: none;
+                display: block;
+                overflow: hidden;                
+            }
+            .postlink.selected.title {
+                font-weight: bold;
+            }
+            .date {
+                font-size: 10px;
+                color: #999;
+            }
+            .title {
+                color: #222;
+            }
+            #index-holder {
+                width: 10000px;
+            }
+
+            @media all and (max-width:1000px) {
+                #map, #highmap {
+                    display: none;
+                }
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
+            @media all and (max-height:800px) {
+                #image-scroller img {
+                    max-height: 300px;
+                }
+                .thumbnails img {
+                    max-height: 50px;
+                }
+            }
+            
+            @media all and (max-width:750px) {
+                .tophead, #content, .thumbnails, .fb-comments, .comment-hdr, #single-image {
+                    margin-left: 10px;
+                }
+                #map, #highmap {
+                    display: none;
+                }
+                #content, .author {
+                    width: auto;
+                }
+                #image-scroller img {
+                    max-height: 350px;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class='mast'>
+            <a class='back' href='../../../index.html'><div class='arrow-left'></div><span>Back to List of Posts</span></a>
+            <a href='../../../../../../index.html'>Ennals.org</a> &gt; <a href='../../../../../../rob.html'>Rob Ennals</a> &gt; <a href='http://ennals.org/rob/travel'>Travel</a> &gt; <a href='../../../index.html'>The Big Trip</a>
+        </div>
+        <div class='tophead'>
+        <h2>The Jenin Refugee Camp</h2>
+        <div class='author'>by <a rel='author' href='../../../../../../rob.html'>Rob Ennals</a> - <span class='mastdate'>September 11 2010</span></div>
+        </div>
+        
+            <div id='image-frame' width='100%'>
+                <div id='image-scroller' style='width:10000px'>
+                    
+                        <img src='../../../image/2010/09/14899600-photo&#32;4.JPG'>
+                    
+                        <img src='../../../image/2010/09/14899602-photo&#32;1.JPG'>
+                    
+                        <img src='../../../image/2010/09/14899603-photo&#32;2.JPG'>
+                    
+                        <img src='../../../image/2010/09/14899604-photo&#32;3.JPG'>
+                    
+                        <img src='../../../image/2010/09/14899605-photo&#32;5.JPG'>
+                                
+                </div>
+            </div>
+            <div class='thumbnails'>
+                
+                    <img src='../../../image/2010/09/14899600-photo&#32;4.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14899602-photo&#32;1.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14899603-photo&#32;2.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14899604-photo&#32;3.JPG' onclick='thumb(this)'>
+                
+                    <img src='../../../image/2010/09/14899605-photo&#32;5.JPG' onclick='thumb(this)'>
+                            
+            </div>
+        
+
+        <div id='content'>
+            
+                <p>
+It was September 11th. Clearly I needed to go talk to some terrorists.
+</p>
+
+            
+                <p>
+The Jenin refugee camp is a district of the city of Jenin in the west bank. The media like to call it a refugee camp because many of the people who live there are descended from people who were forced to leave their homes when Israel was created. Interestingly the media never call israel a refugee camp, despite it meeting the same criteria.
+</p>
+
+            
+                <p>
+Given the name "refugee camp" you might expect somewhere with tents. You might at least expect somewhere noticeably different from the rest of the city. In fact the only way you can tell you are in the refugee camp is that the locals tell you that is where you are, and there are lots of new buildings provided by USAID and the UN which have signs saying they are for refugee support. It wasn't obviously any poorer than any other Arab town, in fact all the new buildings made bits if it seem quite swanky.
+</p>
+
+            
+                <p>
+Jenin is famous for being a terrorist hotbed. It is known as the suicide bomber capital and was the site of the famous (and widely misreported in the media) battle of Jenin, during which Israel fought a terrorist holdout and demolished some buildings. Jenin is overflowing with signs of Islamic terrorism. There are terrorist murals and banners everywhere. Jenin is filled with children, all of them have toy guns, and many of them pretended to shoot me as I walked past. Several of the children had air guns that they shot me with - it hurt! At one point two kids were staging a mock abduction and execution of another child. Incidentally, back in Jerusalem, many of the arab children had toy guns that they used to pretend to shoot Jewish people.
+</p>
+
+            
+                <p>
+The key local terrorist group is the Al Aqsa Martyrs Brigade. This group was responsible for many suicide bombings and was the group the Israelis fought in the battle of Jenin. It didn't take long for me to find a member. I was walking through the back streets when I was ambushed by his eight children who started shooting me with their air guns. He rescued me, brought me into his home, and gave me some coffee and sweets. The wall of his living room was a shrine to martyrs from Jenin. Each person had a photo, usually armed. Pride of place was his father, who had died in the battle of Jenin. We talked for a while and then he showed me the site of the battle. Sadly he didn't speak good English so I wasn't able to get any deep insights into what he thought.&nbsp;Later on in Jenin, I found someone who did speak good English. He told me that the aim of his group was not just to expel the Jews from israel, but to conquer the whole world for Islam.&nbsp;Oh good.
+</p>
+
+            
+                <p>
+Getting to Jenin was a bit harder than I expected. The northern border is now open (it closed during the intifada, but reopened when things calmed down), but I was advised that it would not be safe to drive in Jenin with Israeli plates while looking obviously non-Arab. I parked my car a few hundred metres from the border and attempted to walk through the checkpoint. This confused the border guards. The border is in the middle of nowhere, nobody had apparently ever tried to walk across before, and nobody knew what the correct procedure was. After a few minutes the guards got confirmation to let me through and I got a drinks seller to call a taxi to drive out from Jenin to pick me up. Getting out again was roughly the same procedure.
+</p>
+
+            
+        </div>
+
+        
+            
+            <div id='map'>
+            
+                <img src='https://maps.googleapis.com/maps/api/staticmap?center=Jenin&zoom=5&size=300x300&sensor=false&markers=red|Jenin'>
+            </div>
+        
+
+    </body>
+    <script>
+        function thumb(img) {
+            var url = img.getAttribute('src');
+            var scroller = document.getElementById('image-scroller');
+            var offset = document.getElementById('content').offsetLeft;
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.getAttribute('src') == url){
+                    scroller.style.left = -(img.offsetLeft - offset) + 'px';
+                }
+            }
+        }
+        function scrollToImg(scroller, img) {
+            scroller.style.left = -(img.offsetLeft - 200) + 'px';
+        }
+        function left() {
+            var scroller = document.getElementById('image-scroller');
+            for (var i = 0; i < scroller.childNodes.length; i++) {
+                var img = scroller.childNodes[i];
+                if (img.tagName == 'IMG' && img.offsetLeft ){
+                    scroller.style.left = -(img.offsetLeft - 200) + 'px';
+                }
+            }
+        }
+        function right() {
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+</html>
