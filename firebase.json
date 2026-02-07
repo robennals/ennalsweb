@@ -5,6 +5,18 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/rob.html",
+        "destination": "https://robennals.org",
+        "type": 301
+      },
+      {
+        "source": "/rob",
+        "destination": "https://robennals.org",
+        "type": 301
+      }
     ]
   }
 }
